@@ -4,23 +4,23 @@ export default function HomePage() {
     <main className = "min-h-screen bg-zinc-900 text-white flex flex-col items-center space-y-16">
       
       {/* Summary Section */}
-      <section className = "relative flex max-w-full mt-16">
+      <section className = "relative grid grid-cols-[1fr_auto_1fr] max-w-full mt-16">
         {/* Summary Section Text */}
-        <div className = "flex flex-col text-center justify-center max-w-full">
+        <div className = "flex col-start-2 flex-col text-center justify-center max-w-full">
           {/* Page Header Background and Text */}
-          <div className = "max-w-4xl px-10 md:px-48 2xl:px-58 mx-auto h-[150px] bg-zinc-700 flex items-center justify-center rounded-lg">
-            <h1 className = "text-3xl md:text-4xl font-bold">Liam Mack Snyder</h1>
+          <div className = "max-w-4xl px-10 sm:px-24 md:px-48 2xl:px-58 mx-auto h-[150px] bg-zinc-700 flex items-center justify-center rounded-lg">
+            <h1 className = "text-3xl sm:text-[2.1rem] md:text-4xl font-bold">Liam Mack Snyder</h1>
           </div>
           <p className = "max-w-2xl px-4 text-lg mx-auto text-gray-300 mt-4 mb-6">
             Full-stack developer and designer with a dual focus in Computer Information Systems and Marketing. I build fast, clean web experiences from the ground up.
           </p>
         </div> 
         {/* Summary Section Image Border and Image */}
-        <div className = "hidden xl:block absolute right-[-47.5%] 2xl:right-[-55%] px-4 py-4 bg-radial from-slate-800 to-zinc-800 rounded-xl shadow-xl">
+        <div className = "col-start-3 w-fit h-fit hidden lg:block right-[-35%] xl:right-[-45%] 2xl:right-[-55%] px-4 py-4 bg-radial from-slate-800 to-zinc-800 rounded-xl shadow-xl">
           <img 
             src = "/Backhat 2.png" 
             alt = "Profile Picture" 
-            className = "w-64 h-64 object-contain mx-auto rounded-xl shadow-xl"
+            className = "lg:w-48 xl:w-56 2xl:w-64 h-auto object-contain mx-auto rounded-xl shadow-xl"
           />
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function HomePage() {
           {/* Design Work Button */}
           <button className = "w-full max-w-md md:max-w-lg h-[550px] sm:h-[650px] md:h-[800px] rounded-4xl bg-linear-to-b from-fuchsia-600 to-zinc-500 hover:scale-105 hover:bg-sky-500 duration-300 flex flex-col">
             {/* Design Work Button Image */}
-            <div className = "bg-[#28211e] mx-auto px-4 md:px-8 py-4 md:py-8 rounded-4xl mt-8 lg:mt-12 rounded-full">
+            <div className = "bg-[#28211e] mx-auto px-4 sm:px-8 py-4 sm:py-8 rounded-4xl mt-8 lg:mt-12 rounded-full">
               <img
                 src = "/Lion Line Art Transparent.png" 
                 alt = "Designs Preview" 
