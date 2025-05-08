@@ -10,3 +10,6 @@ This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [
 - **TypeScript** – Type-safe JavaScript for safer, more maintainable code
 - **Tailwind CSS** – Utility-first styling framework for quick UI development
 - **Vercel** – Cloud platform for deployment and hosting
+
+
+<br/><br/>Disclaimer: This sites code is open source but the images, artwork, and design elements are not. All rights for design elements are reserved. See "LICENSE-ART" file in /public for more information.
