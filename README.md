@@ -12,4 +12,4 @@ This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [
 - **Vercel** – Cloud platform for deployment and hosting
 
 
-<br/><br/>Disclaimer: This sites code is open source but the images, artwork, and design elements are not. All rights for design elements are reserved. See "LICENSE-ART" file in /public for more information.
+<br/><br/>Disclaimer: This sites code is open source but the images, artwork, and design elements are not. All rights for design elements are reserved. See ['public/LICENSE-ART'](public/LICENSE-ART) file for more information.
