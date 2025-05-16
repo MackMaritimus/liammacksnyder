@@ -15,7 +15,7 @@ This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [
 This site is still under development. I began building it in May 2025, focusing first on frontend layout and responsive design. The buttons for design and coding work are currently either linked to websites or nonfunctional.
 
 - “Coding Work” currently links to my GitHub archive repo
-- “Design Work” is not yet active but will feature original visual and brand work
+- “Design Work” is not yet active but will feature original artwork and design work
 
 ## 📂 Code Archive Repo (also WIP)
 A public GitHub archive of my coursework and personal projects, currently including SQL. Java, Python, and React Native work will be added soon.
