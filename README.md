@@ -1,6 +1,6 @@
 # Liam Mack Snyder – Portfolio
 
-This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). It showcases my development work and design work for both Computer Information Systems and Marketing.
+This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). When finished, it will showcase my development work and design work for both of my majors, Computer Information Systems and Marketing, as well as coding and artwork/design work I've done outside of school.
 
 ## 🌐 Live Site
 [liammacksnyder.vercel.app](https://liammacksnyder.vercel.app)
@@ -11,5 +11,16 @@ This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [
 - **Tailwind CSS** – Utility-first styling framework for quick UI development
 - **Vercel** – Cloud platform for deployment and hosting
 
+## 🚧 Work in Progress
+This site is still under development. I began building it in May 2025, focusing first on frontend layout and responsive design. The buttons for design and coding work are currently either linked to websites or nonfunctional.
 
-<br/><br/>Disclaimer: This sites code is open source but the images, artwork, and design elements are not. All rights for design elements are reserved. See ['public/LICENSE-ART'](public/LICENSE-ART) file for more information.
+- “Coding Work” currently links to my GitHub archive repo
+- “Design Work” is not yet active but will feature original visual and brand work
+
+## 📂 Code Archive Repo (also WIP)
+A public GitHub archive of my coursework and personal projects, currently including SQL. Java, Python, and React Native contributions will be added soon.
+
+[github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive](https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive)
+
+## 🚫 Disclaimer: 
+This sites code is open source, but the images and artwork are not. All rights for the images, found in the /public folder, are reserved. See ['public/LICENSE-ART'](public/LICENSE-ART) file for more information.
