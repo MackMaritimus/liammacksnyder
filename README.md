@@ -1,4 +1,4 @@
-# Liam Mack Snyder – Portfolio
+# Liam Mack Snyder – Portfolio Site Code
 
 This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). When finished, it will showcase my development work and design work for both of my majors, Computer Information Systems and Marketing, as well as coding and artwork/design work I've done outside of school.
 
