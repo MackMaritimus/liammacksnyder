@@ -17,8 +17,8 @@ This site is still under development. I began building it in May 2025, focusing 
 - “Coding Work” currently links to my GitHub archive repo
 - “Design Work” is not yet active but will feature original artwork and design work
 
-## 📂 Code Archive Repo (WIP)
-A public GitHub archive of my coursework and personal projects, currently including SQL. Java, Python, and React Native work will be added soon.
+## 🗄️ Code Archive Repo (WIP)
+The following link is a public GitHub archive of my coursework and personal projects, currently including SQL. Java, Python, and React Native work will be added soon.
 
 [github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive](https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive)
 
