@@ -1,4 +1,4 @@
-# Liam Mack Snyder – Portfolio Site
+# Liam Mack Snyder – Personal Website
 
 This is my personal portfolio site, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). When finished, it will showcase my development work and design work for both of my majors, Computer Information Systems and Marketing, as well as coding and artwork/design work I've done outside of school.
 
@@ -17,7 +17,7 @@ This site is still under development. I began building it in May 2025, focusing 
 - “Coding Work” currently links to my GitHub archive repo
 - “Design Work” is not yet active but will feature original artwork and design work
 
-## 📂 Code Archive Repo (also WIP)
+## 📂 Code Archive Repo (WIP)
 A public GitHub archive of my coursework and personal projects, currently including SQL. Java, Python, and React Native work will be added soon.
 
 [github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive](https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive)
