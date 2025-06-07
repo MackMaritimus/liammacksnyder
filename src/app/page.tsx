@@ -4,25 +4,30 @@ export default function HomePage() {
     <main className = "min-h-screen bg-zinc-900 text-white flex flex-col items-center space-y-16">
       
       {/* Summary Section */}
-      <section className = "relative grid grid-cols-[1fr_auto_1fr] max-w-full mt-16">
+      <section className = "grid grid-cols-[1fr_auto_1fr] gap-x-4 w-full mt-16">
+        
         {/* Summary Section Text */}
         <div className = "flex col-start-2 flex-col text-center justify-center max-w-full">
           {/* Page Header Background and Text */}
-          <div className = "max-w-4xl px-10 sm:px-24 md:px-48 2xl:px-58 mx-auto h-[150px] bg-zinc-700 flex items-center justify-center rounded-lg">
+          <div className = "px-10 sm:px-24 md:px-48 2xl:px-58 mx-auto h-[100px] sm:h-[150px] bg-zinc-700 flex items-center justify-center rounded-lg">
             <h1 className = "text-3xl sm:text-[2.1rem] md:text-4xl font-bold">Liam Mack Snyder</h1>
           </div>
           <p className = "max-w-2xl px-4 text-lg mx-auto text-gray-300 mt-4 mb-6">
             Full-stack developer and designer with a dual focus in Computer Information Systems and Marketing. I build fast, clean web experiences from the ground up.
           </p>
         </div> 
+
         {/* Summary Section Image Border and Image */}
-        <div className = "col-start-3 w-fit h-fit hidden lg:block right-[-35%] xl:right-[-45%] 2xl:right-[-55%] px-4 py-4 bg-radial from-slate-800 to-zinc-800 rounded-xl shadow-xl">
-          <img 
-            src = "/Backhat 2.png" 
-            alt = "Profile Picture" 
-            className = "lg:w-48 xl:w-56 2xl:w-64 h-auto object-contain mx-auto rounded-xl shadow-xl"
-          />
-        </div>
+        <div className = "flex col-start-3 w-full hidden 2xl:block">
+          <div className = "w-fit h-fit hidden xl:block mx-auto p-5 bg-radial from-slate-800 to-zinc-800 rounded-xl shadow-xl">
+            <img 
+              src = "/Backhat 2.png" 
+              alt = "Profile Picture" 
+              className = "w-64 h-auto object-contain mx-auto rounded-xl shadow-xl"
+            />
+          </div>
+        </div>  
+
       </section>
 
       {/* "Explore My Work" Section */}
@@ -35,13 +40,13 @@ export default function HomePage() {
         <div className = "w-full flex flex-wrap gap-16 justify-center px-6 mx-auto mb-16">
           
           {/* Design Work Button */}
-          <button className = "w-full max-w-md md:max-w-lg h-[550px] sm:h-[650px] md:h-[800px] rounded-4xl bg-linear-to-b from-fuchsia-600 to-zinc-500 hover:scale-105 hover:bg-sky-500 duration-300 flex flex-col">
+          <button className = "w-full max-w-md md:max-w-lg h-[550px] md:h-[800px] rounded-4xl bg-linear-to-b from-fuchsia-600 to-zinc-500 hover:scale-105 hover:bg-sky-500 duration-300 flex flex-col">
             {/* Design Work Button Image */}
-            <div className = "bg-[#28211e] mx-auto px-4 sm:px-8 py-4 sm:py-8 rounded-4xl mt-8 lg:mt-12 rounded-full">
+            <div className = "bg-[#28211e] mx-auto px-4 md:px-8 py-4 md:py-8 rounded-4xl mt-10 rounded-full">
               <img
                 src = "/Lion Line Art Transparent.png" 
                 alt = "Designs Preview" 
-                className = "w-64 sm:w-80 h-64 sm:h-80 object-contain mb-4 mx-auto"
+                className = "w-64 md:w-80 h-64 md:h-80 object-contain mb-4 mx-auto"
               />
             </div>
             { /* Design Work Button Text */ }
@@ -52,37 +57,47 @@ export default function HomePage() {
           </button>
 
           {/* Coding Work Button */}
-          <button className = "w-full max-w-md md:max-w-lg h-[550px] sm:h-[650px] md:h-[800px] rounded-4xl bg-linear-to-b from-sky-500 to-zinc-500 hover:scale-105 hover:bg-sky-500 duration-300 flex flex-col">
+          <a 
+            className = "w-full max-w-md md:max-w-lg h-[550px] md:h-[800px] rounded-4xl bg-linear-to-b from-sky-500 to-zinc-500 hover:scale-105 hover:bg-sky-500 duration-300 flex flex-col" 
+            href = "https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive"
+            target = "_blank"
+            rel="noopener noreferrer">
             {/* Design Work Button Image */}
-            <div className = "bg-[#28211e] mx-auto px-4 md:px-8 py-4 md:py-8 rounded-4xl mt-8 lg:mt-12 rounded-full">
+            <div className = "bg-[#28211e] mx-auto px-4 md:px-8 py-4 md:py-8 rounded-4xl mt-10 rounded-full ">
               <img
                 src = "/Lion Line Art Transparent.png" 
                 alt = "Designs Preview" 
-                className = "w-64 sm:w-80 h-64 sm:h-80 object-contain mb-4 mx-auto"
+                className = "w-64 md:w-80 h-64 md:h-80 object-contain mb-4 mx-auto"
               />
             </div>
             { /* Design Work Button Text */ }
             <div className = "flex grow flex-col justify-center items-center mx-8 lg:mx-0">
               <h3 className = "text-center text-3xl md:text-4xl text-white">Coding Work</h3>
-              <p className = "max-w-md text-center text-xl md:text-2xl text-gray-300 mt-5 md:mt-10">My coding work Java GUIs, SQL queries, and Python analytics</p>
+              <p className = "max-w-md text-center text-xl md:text-2xl text-gray-300 mt-5 md:mt-10">My coding work including Java GUIs, SQL queries, and Python analytics</p>
             </div>  
-          </button>
+          </a>
+          
+
         </div>
       </section>
 
       {/* Footer Section */ }
       <hr className = "w-full border-gray-700 mt-0 mb-0" />
       
-      <section className = "w-full h-auto flex flex-col px-6 bg-zinc-900">
-        <p className = "ml-auto mt-4">
+      <section className = "w-full h-auto flex flex-col px-6 bg-zinc-900 text-zinc-300 text-right">
+        <p className = "mt-4">
           Contact me at:{" "}
             <a href = "mailto:LiamMackSnyder@outlook.com" className = "text-sky-400 hover:underline">
               LiamMackSnyder@outlook.com
             </a>
         </p>
-        <p className = "ml-auto mt-16 mb-4">
-          © Liam Mack Snyder – Portfolio Content and Website are Copyright-Protected. 
+        <a href = "https://github.com/MackMaritimus/liammacksnyder" className = "ml-auto mt-16 underline">
+          Open-Source - Website is open-source on GitHub
+        </a>
+        <p className = "mb-4 text-zinc-600">
+          © Liam Mack Snyder - Portfolio Content is Copyright-Protected. 
         </p>
+        
       </section>
       
     </main>
