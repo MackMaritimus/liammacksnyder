@@ -21,19 +21,41 @@ export default function Resume () {
                             date = "Graduation Dec 2025" 
                             company = "Colorado State University"
                             location = "Fort Collins, CO"
-                            description= "I did something cool here!"
+                            description= "Certification is Business Application Development"
                         />
 
                         <BubbleTable
-                            title = "High School Diploma" 
-                            date = "Graduation May 2022" 
-                            company = "Centaurus High School"
+                            title = "B.S. Marketing" 
+                            date = "Graduation May 2025" 
+                            company = "Colorado State University"
+                            location = "Fort Collins, CO"
+                            description= "Certification is Business to Business Selling"
+                        />
+
+                    </div>
+                </div>
+
+                <div className = "flex flex-col text-center bg-neutral-900 rounded-full mt-12 mb-12 w-200 h-200 p-10 justify-center items-center">
+                    <div>
+                        <BubbleTable
+                            header = "Professional Experience" 
+                            title = "Landscaper" 
+                            date = "Jun 2021 - Jun 2023" 
+                            company = "Massage the Earth"
                             location = "Lafayette, CO"
+                            description = "Delivered client-focused landscape services in a fast-paced small business setting while taking on additional responsibilities including new hire training and job site preparation."    
+                        />
+
+                        <BubbleTable
+                            title = "Hello" 
+                            date = "Goodbye" 
+                            company = "No"
+                            location = "Yes"
                         />
 
                     </div>
                 </div>
 
         </section>
-    )
+    );
 }

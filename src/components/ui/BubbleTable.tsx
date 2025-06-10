@@ -13,7 +13,7 @@ interface BubbleTableProps {
     description?: string;
 }
 
-export default function BubbleTable ({ header = "", title = "", date = "", company = "", location = "", description = "" }:BubbleTableProps) {
+export default function BubbleTable ({ header = "", title = "", date = "", company = "", location = "", description = ""}:BubbleTableProps) {
     
     return (
     <div>               
@@ -21,7 +21,7 @@ export default function BubbleTable ({ header = "", title = "", date = "", compa
             {header}
         </Head3>
     
-        <div className = "grid grid-cols-2 grid-rows-3 my-6 max-w-150 mb-20 mt-8">
+        <div className = "grid grid-cols-2 grid-rows-2 max-w-150 mt-8">
             <Body className = "text-left col-start-1 row-start-1 font-bold">
                 {title}
             </Body>
@@ -38,10 +38,11 @@ export default function BubbleTable ({ header = "", title = "", date = "", compa
                 {location}
             </Body>
     
-            <BodySmall className = "text-left col-start-1 row-start-3 col-span-full">
-                {description}
-            </BodySmall>
         </div>
+         
+        <BodySmall className = "text-left max-w-150 mb-14">
+            {description}
+        </BodySmall>
     </div>
     );
 }
