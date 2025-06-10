@@ -12,7 +12,7 @@ interface BubbleTableProps {
     bullets?: string;
 }
 
-export default function BubbleTable ({ title="", date="", company="", location="", description="",bullets=""}:BubbleTableProps) {
+function BubbleTable ({ title="", date="", company="", location="", description="",bullets=""}:BubbleTableProps) {
     
     return (
     
@@ -46,3 +46,5 @@ export default function BubbleTable ({ title="", date="", company="", location="
     </div>
     );
 }
+
+export default BubbleTable;
