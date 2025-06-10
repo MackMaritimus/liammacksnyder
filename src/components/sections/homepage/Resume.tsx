@@ -1,7 +1,4 @@
 import Head2 from "@/components/ui/Head2";
-import Head3 from "@/components/ui/Head3";
-import Body from "@/components/ui/Body";
-import BodySmall from "@/components/ui/BodySmall";
 import BubbleTable from "@/components/ui/BubbleTable";
 
 // Resume Section With Qualifications

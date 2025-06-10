@@ -17,14 +17,14 @@ export default function AboutMe () {
                         Liam Mack Snyder
                     </h1>
                  </div>
-                <Body>
+                <Body className = "max-w-2xl mt-6">
                      Full-stack developer and designer with a dual focus in Computer Information Systems and Marketing. I build fast, clean web experiences from the ground up.
                 </Body>
             </div> 
 
             {/* About me Image */}
             <div className = "flex col-start-3 w-full hidden 2xl:block">
-                <img 
+                <img
                     src = "/LinkedIn 2.png" 
                     alt = "Profile Picture" 
                     className = "w-64 h-auto object-contain mx-auto rounded-4xl ring-2 ring-neutral-500"
