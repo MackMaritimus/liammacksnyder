@@ -1,27 +1,23 @@
-import Head3 from "@/components/ui/Head3";
 import Body from "@/components/ui/Body";
 import BodySmall from "@/components/ui/BodySmall";
 
 // Bubble Component, Made for Resume Section. Takes Title, Date, Company, Location, and Description as Params.
 
 interface BubbleTableProps {
-    header?:string;
     title?: string;
     date?: string;
     company?: string;
     location?: string;
     description?: string;
+    bullets?: string;
 }
 
-export default function BubbleTable ({ header = "", title = "", date = "", company = "", location = "", description = ""}:BubbleTableProps) {
+export default function BubbleTable ({ title="", date="", company="", location="", description="",bullets=""}:BubbleTableProps) {
     
     return (
-    <div>               
-        <Head3 className = "mt-2">
-            {header}
-        </Head3>
     
-        <div className = "grid grid-cols-2 grid-rows-2 max-w-150 mt-8">
+    <div className = "bg-neutral-800 rounded-[8px] ring-12 ring-neutral-800">               
+        <div className = "grid grid-cols-2 mt-12 text-bottom">
             <Body className = "text-left col-start-1 row-start-1 font-bold">
                 {title}
             </Body>
@@ -34,17 +30,19 @@ export default function BubbleTable ({ header = "", title = "", date = "", compa
                 {company}
             </Body>
     
-            <Body className = "text-right col-start-2 row-start-2 italic">
+            <Body className = "text-right text-top col-start-2 row-start-2 italic">
                 {location}
             </Body>
     
         </div>
          
-        <BodySmall className = "text-left max-w-150 mb-14">
+        <BodySmall className = "text-left max-w-150">
             {description}
+        </BodySmall>
+
+        <BodySmall className = "text-left max-w-150 whitespace-pre-line ml-6">
+            {bullets}
         </BodySmall>
     </div>
     );
 }
-
-//   <div className = "flex flex-col text-center bg-neutral-900 rounded-full mt-12 mb-12 w-200 h-200 p-10 justify-center items-center">   
