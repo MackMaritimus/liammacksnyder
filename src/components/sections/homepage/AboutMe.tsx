@@ -1,3 +1,4 @@
+import Body from "@/components/ui/Body";
 
 // AboutMe Section With My Name, Personal Summary, and Picture of Me
 
@@ -8,7 +9,7 @@ export default function AboutMe () {
         <section className = "grid grid-cols-[1fr_auto_1fr] gap-x-4 w-full mt-16">
         
             {/* About Me Text Container */}
-            <div className = "flex col-start-2 flex-col text-center justify-top max-w-full">
+            <div className = "flex col-start-2 flex-col text-center justify-top max-w-full items-center">
                 
                 {/* About Me Text Box and Text */}
                 <div className = "px-10 sm:px-24 md:px-44 2xl:px-58 mx-auto h-[100px] sm:h-[150px] bg-zinc-700 flex items-center justify-center rounded-lg ring-1 ring-neutral-500">
@@ -16,9 +17,9 @@ export default function AboutMe () {
                         Liam Mack Snyder
                     </h1>
                  </div>
-                <p className = "max-w-2xl px-4 text-lg mx-auto text-neutral-300 mt-6 mb-4">
+                <Body>
                      Full-stack developer and designer with a dual focus in Computer Information Systems and Marketing. I build fast, clean web experiences from the ground up.
-                </p>
+                </Body>
             </div> 
 
             {/* About me Image */}
