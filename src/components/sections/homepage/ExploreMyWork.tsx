@@ -1,4 +1,5 @@
 import LinkButton from "@/components/ui/LinkButton";
+import BlueGraySec from "@/components/ui/BlueGraySec";
 
 // Explore My Work" Section With Design Work and Coding Work Portfolio Buttons
 
@@ -6,7 +7,7 @@ export default function ExploreMyWork () {
 
     return (
     
-        <section className = "w-full bg-radial from-slate-700 to-zinc-950 flex flex-col mb-0">
+        <BlueGraySec>
             <h2 className = "text-3xl font-bold mt-8 mb-8 text-center">
                 Explore My Work
             </h2>
@@ -15,7 +16,7 @@ export default function ExploreMyWork () {
             <div className = "w-full flex flex-wrap gap-16 justify-center px-6 mx-auto mb-16">
             
                 {/* Design Work Button */}
-                <button className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[800px] rounded-4xl bg-linear-to-b from-fuchsia-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-2 ring-gray-500">
+                <button className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-fuchsia-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-white">
                     {/* Design Work Button Image */}
                     <img
                         src = "/Lion Line Art Transparent 1200-1200.png" 
@@ -37,7 +38,7 @@ export default function ExploreMyWork () {
                 {/* Coding Work Button */}
                 <LinkButton 
                     href = "https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive" 
-                    className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[800px] rounded-4xl bg-linear-to-b from-cyan-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-2 ring-gray-500"
+                    className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-cyan-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-white"
                     >
 
                     {/* Coding Work Button Image */}
@@ -59,6 +60,6 @@ export default function ExploreMyWork () {
                 </LinkButton>    
 
             </div>
-        </section>
+        </BlueGraySec>
     );
 }
