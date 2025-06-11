@@ -9,14 +9,14 @@ interface BubbleTableProps {
     company?: string;
     location?: string;
     description?: string;
-    bullets?: string;
+    bullets?: string[];
 }
 
-function BubbleTable ({ title="", date="", company="", location="", description="",bullets=""}:BubbleTableProps) {
+function BubbleTable ({ title="", date="", company="", location="", description="", bullets = []}:BubbleTableProps) {
     
     return (
     
-    <div className = "bg-neutral-800 rounded-[8px] ring-12 ring-neutral-800">               
+    <div className = "mt-16 bg-neutral-800 rounded-[8px] ring-16 ring-neutral-800">               
         <div className = "grid grid-cols-2 mt-12 text-bottom">
             <Body className = "text-left col-start-1 row-start-1 font-bold">
                 {title}
@@ -29,7 +29,7 @@ function BubbleTable ({ title="", date="", company="", location="", description=
             <Body className = "text-left col-start-1 row-start-2 italic">
                 {company}
             </Body>
-    
+        
             <Body className = "text-right text-top col-start-2 row-start-2 italic">
                 {location}
             </Body>
@@ -40,9 +40,14 @@ function BubbleTable ({ title="", date="", company="", location="", description=
             {description}
         </BodySmall>
 
-        <BodySmall className = "text-left max-w-150 whitespace-pre-line ml-6">
-            {bullets}
-        </BodySmall>
+        {bullets.length > 0 && (
+            <ul className = "list-disc list-inside mt-2 space-y-1 text-left text-sm text-zinc-300">
+                {bullets.map((item, index) => (
+                    <li key={index}> {item} </li>
+                ))}
+            </ul>
+        )}
+
     </div>
     );
 }

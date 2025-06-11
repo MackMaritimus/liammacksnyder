@@ -7,13 +7,13 @@ export default function HPFooter () {
         
         <section className = "w-full h-auto flex px-6 bg-zinc-900 text-zinc-300 gap-12">
             
-            <div className = "max-w-full h-auto flex flex-wrap flex-grow text-right items-end gap-x-3">
+            <div className = "max-w-full h-auto flex flex-wrap flex-grow text-left items-start min-[856px]:items-end gap-x-3">
                 <img
                     src = "/GitHub_Invertocat_Light.svg"
-                    className = "w-10 h-auto mt-4 mb-2"
+                    className = "w-10 h-auto mt-4 mb-3"
                 />
 
-                <a href = "https://github.com/MackMaritimus/liammacksnyder" className = "text-left text-neutral-300 mb-4 mt-6 underline" target = "_blank" rel = "noopener noreferrer">
+                <a href = "https://github.com/MackMaritimus/liammacksnyder" className = "text-left text-neutral-300 mb-4 mt-auto underline" target = "_blank" rel = "noopener noreferrer">
                     Website is open-source on GitHub
                 </a>
             </div>    
