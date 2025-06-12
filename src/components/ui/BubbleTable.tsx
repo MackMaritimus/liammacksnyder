@@ -1,5 +1,6 @@
 import Body from "@/components/ui/Body";
 import BodySmall from "@/components/ui/BodySmall";
+import BulletList from "./BulletList";
 
 // Bubble Component, Made for Resume Section. Takes Title, Date, Company, Location, and Description as Params.
 
@@ -40,13 +41,7 @@ function BubbleTable ({ title="", date="", company="", location="", description=
             {description}
         </BodySmall>
 
-        {bullets.length > 0 && (
-            <ul className = "list-disc list-inside mt-2 space-y-1 text-left text-sm text-zinc-300">
-                {bullets.map((item, index) => (
-                    <li key={index}> {item} </li>
-                ))}
-            </ul>
-        )}
+        <BulletList items = {bullets} className = "text-sm text-zinc-300"/>
 
     </div>
     );
