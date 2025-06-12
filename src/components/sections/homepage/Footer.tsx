@@ -6,7 +6,7 @@ export default function HPFooter () {
     
     return (
         
-        <section className = "w-full h-auto flex px-6 bg-zinc-900 text-zinc-300 gap-12">
+        <section className = "w-full h-auto flex px-6 bg-zinc-900 text-zinc-300">
             
             <Table 
                 rows = "2" 
@@ -32,7 +32,7 @@ export default function HPFooter () {
                 <p className = "mt-4 mb-12 row-start-1 col-start-2 text-right">
                     Contact me at:{" "}
                     <a href = "mailto:LiamMackSnyder@outlook.com" className = "text-sky-400 hover:underline">
-                        LiamMackSnyder@outlook.com
+                        LiamMackSnyder @ outlook.com
                     </a>
                 </p>
 
