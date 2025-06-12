@@ -22,7 +22,7 @@ export default function HPFooter () {
                 </div>
 
                 {/* Open-Source Text/Link */}
-                <div className = "flex flex-col items-start h-full bg-sky-00 row-start-2 col-start-1 min-[750px]:ml-14 ">
+                <div className = "flex flex-col items-start h-full row-start-2 col-start-1 min-[750px]:ml-14 ">
                     <a href = "https://github.com/MackMaritimus/liammacksnyder" className = "text-neutral-300 underline" target = "_blank" rel = "noopener noreferrer">
                         Website is open-source on GitHub
                     </a>
@@ -37,8 +37,8 @@ export default function HPFooter () {
                 </p>
 
                 {/* Portfolio Content Copyright Disclaimer */}
-                <div className = "flex flex-col items-start h-full bg-emerald-00 row-start-2 col-start-2">
-                    <a href = "https://github.com/MackMaritimus/liammacksnyder/blob/89398994a353e9637af04295f9b977b16cd078e6/public/LICENSE-ART" className = "text-zinc-600 ml-auto underline" target = "_blank" rel = "noopener noreferrer">
+                <div className = "flex flex-col items-start h-full row-start-2 col-start-2">
+                    <a href = "https://github.com/MackMaritimus/liammacksnyder/blob/89398994a353e9637af04295f9b977b16cd078e6/public/LICENSE-ART" className = "text-right text-zinc-600 ml-auto underline" target = "_blank" rel = "noopener noreferrer">
                         © Liam Mack Snyder - Portfolio Content is Copyright-Protected. 
                     </a>
                 </div>
