@@ -11,7 +11,7 @@ export default function HPFooter () {
             <Table 
                 rows = "2" 
                 cols = "2"
-                className = "w-full items-center">
+                className = "w-full items-center mb-4">
                 
                 {/* GitHub Logo */}
                 <div className = "flex flex-col items-start bg-rose-80 min-[750px]:mb-4 max-[750px]:mt-6 w-fit h-full row-start-1 col-start-1 min-[750px]:row-start-2">
