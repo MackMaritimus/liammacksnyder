@@ -41,7 +41,7 @@ function BubbleTable ({ title="", date="", company="", location="", description=
         </BodySmall>
 
         {bullets.length > 0 && (
-            <ul className = "list-disc list-inside mt-2 space-y-1 text-left text-sm text-zinc-300">
+            <ul className = "list-disc list-inside mt-4 space-y-1 text-left text-sm text-zinc-300">
                 {bullets.map((item, index) => (
                     <li key={index}> {item} </li>
                 ))}
