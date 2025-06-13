@@ -23,11 +23,11 @@ export default function AboutMe () {
             </div> 
 
             {/* About me Image */}
-            <div className = "flex col-start-3 w-full hidden 2xl:block">
+            <div className = "flex col-start-3 w-full hidden xl:block">
                 <img
                     src = "/LinkedIn 2.png" 
                     alt = "Profile Picture" 
-                    className = "w-64 h-auto object-contain mx-auto rounded-4xl ring-2 ring-neutral-500"
+                    className = "w-56 2xl:w-64 h-auto object-contain mx-auto rounded-4xl ring-2 ring-neutral-500"
                 />
             </div>  
 

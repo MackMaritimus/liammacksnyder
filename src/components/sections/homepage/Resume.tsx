@@ -92,7 +92,7 @@ export default function Resume () {
                     {/* Student Teller Position */}
                     <BubbleTable
                         title = "Charles Schwab Trading" 
-                        date = "2020 – Present" 
+                        date = "2020 - Present" 
                         description = "Traded stocks since I was 15 years old, now maintaining two brokerage accounts, both of which have achieved profits."
                         bullets = {[
                             "Achieved 193% growth and a 100% gain/loss ratio on one of two brokerages in 2024",
@@ -101,7 +101,7 @@ export default function Resume () {
 
                     <BubbleTable
                         title = "2D Unity 8-Bit RPG Prototype" 
-                        date = "Nov 2024 – Dec 2024" 
+                        date = "Nov 2024 - Dec 2024" 
                         description = "For practice with both game engines and C#, designed the first section of a map, implemented basic scripts, and solved problems while documenting my process on Notion."
                         bullets = {[
                             "Implemented C# scripts for player movement, camera switching between game objects, and collision with a tilemap",
@@ -110,10 +110,10 @@ export default function Resume () {
 
                     <BubbleTable
                         title = "User Customization iOS Icon Pack" 
-                        date = "Oct 2024 – Nov 2024" 
+                        date = "Oct 2024 - Nov 2024" 
                         description = "Designed over 150 app icons for user customization tailored for launch on Etsy using Photoshop and Illustrator."
                         bullets = {[
-                            "Completed over 150 icons, improving process eaiciency and methods as I worked, in the span of 1 month",
+                            "Completed over 150 icons, improving process efficiency and methods as I worked, in the span of 1 month",
                             "Performed competitor analysis, designed icons for a target market of women, identified keywords, and researched pricing"]}
                     />
 

@@ -16,7 +16,7 @@ export default function ExploreMyWork () {
             <div className = "w-full flex flex-wrap gap-16 justify-center px-6 mx-auto mb-16">
             
                 {/* Design Work Button */}
-                <button className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-fuchsia-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-white">
+                <button className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-fuchsia-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-gray-400">
                     {/* Design Work Button Image */}
                     <img
                         src = "/Lion Line Art Transparent 1200-1200.png" 
@@ -25,11 +25,11 @@ export default function ExploreMyWork () {
                     />
                 
                     { /* Design Work Button Text */ }
-                    <div className = "flex grow flex-col justify-center items-center mx-8 lg:mx-0">
+                    <div className = "flex grow flex-col justify-center items-center mx-8 lg:mx-0">  
                         <h3 className = "text-center text-3xl md:text-4xl text-white">
                             Design Work
                         </h3>
-                        <p className = "max-w-md text-center text-xl md:text-2xl text-gray-300 mt-5 md:mt-10 italic">
+                        <p className = "max-w-md text-center text-xl md:text-2xl text-white mt-5 md:mt-10 italic">
                             My design work including Adobe Suite, Canva, and Odd Projects
                         </p>
                     </div>
@@ -38,7 +38,7 @@ export default function ExploreMyWork () {
                 {/* Coding Work Button */}
                 <LinkButton 
                     href = "https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive" 
-                    className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-cyan-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-white"
+                    className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-cyan-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-gray-400"
                     >
 
                     {/* Coding Work Button Image */}
