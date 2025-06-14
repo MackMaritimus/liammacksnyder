@@ -13,7 +13,6 @@ export default function Table ({ rows , cols, className = "", children}:TablePro
     const ClassName = `grid grid-rows-${rows} grid-cols-${cols} ${className}`
 
     return (
-
         <div className = {ClassName}>
             {children}
         </div>

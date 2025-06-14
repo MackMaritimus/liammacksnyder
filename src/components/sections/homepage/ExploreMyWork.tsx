@@ -6,8 +6,8 @@ import BlueGraySec from "@/components/ui/BlueGraySec";
 export default function ExploreMyWork () {
 
     return (
-    
         <BlueGraySec>
+
             <h2 className = "text-3xl font-bold mt-8 mb-8 text-center">
                 Explore My Work
             </h2>
@@ -56,9 +56,9 @@ export default function ExploreMyWork () {
                         <p className = "max-w-md text-center text-xl md:text-2xl text-gray-300 mt-5 md:mt-10 italic">
                             My coding work including Java GUIs, SQL queries, and Python analytics
                         </p>
-                    </div>  
-                </LinkButton>    
+                    </div>
 
+                </LinkButton>    
             </div>
         </BlueGraySec>
     );

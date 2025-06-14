@@ -4,10 +4,9 @@ import Body from "@/components/ui/Body";
 
 export default function AboutMe () {
 
-    return(
-    
+    return(     
         <section className = "grid grid-cols-[1fr_auto_1fr] gap-x-4 w-full mt-16">
-        
+
             {/* About Me Text Container */}
             <div className = "flex col-start-2 flex-col text-center justify-top max-w-full items-center">
                 

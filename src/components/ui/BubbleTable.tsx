@@ -16,44 +16,32 @@ interface BubbleTableProps {
 function BubbleTable ({ title="", date="", company="", location="", description="", bullets = []}:BubbleTableProps) {
     
     return (
-    
-    <div className = "mt-16 bg-neutral-800 rounded-[8px] ring-16 ring-neutral-800">               
-        <div className = "grid grid-cols-2 mt-12 text-bottom">
-            <Body className = "text-left col-start-1 row-start-1 font-bold">
-                {title}
-            </Body>
-    
-            <Body className = "text-right col-start-2 row-start-1 font-bold">
-                {date}
-            </Body>
-    
-            <Body className = "text-left col-start-1 row-start-2 italic">
-                {company}
-            </Body>
+        <div className = "mt-16 bg-neutral-800 rounded-[8px] ring-16 ring-neutral-800">               
+            <div className = "grid grid-cols-2 mt-12 text-bottom">
+                <Body className = "text-left col-start-1 row-start-1 font-bold">
+                    {title}
+                </Body>
         
-            <Body className = "text-right text-top col-start-2 row-start-2 italic">
-                {location}
-            </Body>
-    
+                <Body className = "text-right col-start-2 row-start-1 font-bold">
+                    {date}
+                </Body>
+        
+                <Body className = "text-left col-start-1 row-start-2 italic">
+                    {company}
+                </Body>
+            
+                <Body className = "text-right text-top col-start-2 row-start-2 italic">
+                    {location}
+                </Body>
+        
+            </div>
+            
+            <BodySmall className = "text-left max-w-150">
+                {description}
+            </BodySmall>
+
+            <BulletList items = {bullets} className = "text-sm text-zinc-300"/>
         </div>
-         
-        <BodySmall className = "text-left max-w-150">
-            {description}
-        </BodySmall>
-
-<<<<<<< HEAD
-        {bullets.length > 0 && (
-            <ul className = "list-disc list-inside mt-4 space-y-1 text-left text-sm text-zinc-300">
-                {bullets.map((item, index) => (
-                    <li key={index}> {item} </li>
-                ))}
-            </ul>
-        )}
-=======
-        <BulletList items = {bullets} className = "text-sm text-zinc-300"/>
->>>>>>> 0e12930789ac99c95f0c4aa2a094207f3c948dcc
-
-    </div>
     );
 }
 

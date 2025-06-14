@@ -8,7 +8,6 @@ import CompDivider from "@/components/ui/CompDivider";
 export default function Resume () {
 
     return (
-        
         <section className = "w-full bg-radial from-zinc-800 to-zinc-700 flex flex-col mb-0 items-center text-wrap">
             
                 <Head2 className = "mt-8">
