@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #111111;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0c0c0c;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0c0c0c;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+    .bg-richblack { background-color: #02111b; }
+    .bg-onyx { background-color: #3f4045; }
+    .bg-raisinblack { background-color: #30292f; }
+    .bg-paynesgray { background-color: #5d737e; }
+    .bg-offwhite { background-color: #fcfcfc; }
+
+    .text-richblack { color: #02111b; }
+    .text-onyx { color: #3f4045; }
+    .text-night { color: #111111; }
+    .text-paynesgray { color: #5d737e; }
+    .text-offwhite { color: #fcfcfc; }
 }

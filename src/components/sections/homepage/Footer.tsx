@@ -5,7 +5,7 @@ import Table from "@/components/ui/Table";
 export default function HPFooter () {
     
     return (    
-        <section className = "w-full h-auto flex px-6 bg-zinc-900 text-zinc-300">
+        <section className = "w-full h-auto flex px-6 text-zinc-300">
             
             <Table 
                 rows = "2" 

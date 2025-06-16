@@ -23,7 +23,7 @@ export default function Resume () {
                         date = "Graduation Dec 2025" 
                         company = "Colorado State University"
                         location = "Fort Collins, CO"
-                        bullets= {["Certification in Business Application Development"]}
+                        description = "Certification in Business Application Development"
                     />
                     
                     {/* B.S. Marketing, CSU */}
@@ -32,7 +32,7 @@ export default function Resume () {
                         date = "Graduation Dec 2025" 
                         company = "Colorado State University"
                         location = "Fort Collins, CO"
-                        bullets= {["Certification in Business to Business Selling"]}
+                        description = "Certification in Business to Business Selling"
                     />
                 </Bubble1>
     
