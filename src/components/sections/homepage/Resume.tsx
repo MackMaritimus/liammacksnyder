@@ -1,4 +1,3 @@
-import Head2 from "@/components/ui/Head2";
 import BubbleTable from "@/components/ui/BubbleTable";
 import Bubble1 from "@/components/ui/Bubble1";
 import CompDivider from "@/components/ui/CompDivider";
@@ -8,11 +7,7 @@ import CompDivider from "@/components/ui/CompDivider";
 export default function Resume () {
 
     return (
-        <section className = "w-full bg-radial from-zinc-800 to-zinc-700 flex flex-col mb-0 items-center text-wrap">
-            
-                <Head2 className = "mt-8">
-                    Resume
-                </Head2>
+        <section className = "w-full flex flex-col mb-0 items-center text-wrap">
                 
                 {/* Education Bubble */}
                 <Bubble1 header = "Education">
@@ -91,7 +86,7 @@ export default function Resume () {
                     {/* Student Teller Position */}
                     <BubbleTable
                         title = "Charles Schwab Trading" 
-                        date = "2020 - Present" 
+                        date = "2020 - Present"
                         description = "Traded stocks since I was 15 years old, now maintaining two brokerage accounts, both of which have achieved profits."
                         bullets = {[
                             "Achieved 193% growth and a 100% gain/loss ratio on one of two brokerages in 2024",

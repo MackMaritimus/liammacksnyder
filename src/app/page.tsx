@@ -3,7 +3,6 @@ import AboutMe from "@/components/sections/homepage/AboutMe";
 import Footer from "@/components/sections/homepage/Footer";
 import SectionDivider from "@/components/ui/SectionDivider";
 import Resume from "@/components/sections/homepage/Resume";
-import LayeredBubble from "@/components/ui/LayeredBubble";
 
 export default function HomePage() {
     return (
@@ -11,15 +10,12 @@ export default function HomePage() {
             
             { /* AboutMe Section With My Name, Personal Summary, and Picture of Mexplore My Work" Section With Design Work and Coding Work Portfolio Buttons */ }
             <AboutMe/>
-            <SectionDivider/>
-
-            { /* Explore My Work" Section With Design Work and Coding Work Portfolio Buttons */ }
-            <ExploreMyWork/>
-            <SectionDivider/>
 
             <Resume/>
             <SectionDivider/>
-
+            { /* Explore My Work" Section With Design Work and Coding Work Portfolio Buttons */ }
+            <ExploreMyWork/>
+            <SectionDivider/>
             { /* Footer Section With Disclaimers and Email. Has Links to Vercel Website Deployment and Personal Archive GitHub Repos */ }
             <Footer/>
 

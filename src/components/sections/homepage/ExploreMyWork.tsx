@@ -1,16 +1,15 @@
 import LinkButton from "@/components/ui/LinkButton";
-import BlueGraySec from "@/components/ui/BlueGraySec";
 
 // Explore My Work" Section With Design Work and Coding Work Portfolio Buttons
 
 export default function ExploreMyWork () {
 
     return (
-        <BlueGraySec>
+        <section className = "w-full bg-radial from-slate-900 to-zinc-950 flex flex-col mb-0">
 
-            <h2 className = "text-3xl font-bold mt-8 mb-8 text-center">
+            <h1 className = "text-3xl sm:text-[2.1rem] md:text-[40px] font-bold text-[#DADAD9] font-comic-sans text-center mt-12 mb-12">
                 Explore My Work
-            </h2>
+            </h1>
             
             {/* Buttons Container */}
             <div className = "w-full flex flex-wrap gap-16 justify-center px-6 mx-auto mb-16">
@@ -60,6 +59,6 @@ export default function ExploreMyWork () {
 
                 </LinkButton>    
             </div>
-        </BlueGraySec>
+        </section>
     );
 }

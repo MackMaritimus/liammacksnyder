@@ -1,15 +1,16 @@
 import Body from "@/components/ui/Body";
 import Socials from "@/components/ui/Socials";
+import Image from "next/image";
 
 // AboutMe Section With My Name, Personal Summary, and Picture of Me
 
 export default function AboutMe () {
 
     return(     
-        <section className = "grid grid-cols-2 gap-x-4 w-full mt-30 items-center">
+        <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-30 items-center">
 
             {/* About Me Text Container */}
-            <div className = "flex col-start-1 flex-col text-left max-w-full items-left ml-24">
+            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start mx-16 xl:ml-[25%]">
                 
                 {/* About Me Text Box and Text */}
                 
@@ -34,19 +35,29 @@ export default function AboutMe () {
                     Certifications in Business App Development and B2B Selling
                 </Body>
 
-                <Socials className = "mt-6" width = "8"/>
+                <Body className = "max-w-2xl mt-6">
+                    Fort Collins, CO
+                </Body>
+
+                <Socials className = "mt-6" width = "30"/>
 
             </div> 
 
             
 
             {/* About me Image */}
-            <div className = "flex col-start-2 w-full hidden xl:block items-center p-4">
-                <img
-                    src = "/LinkedIn_2.png" 
-                    alt = "Portrait of Liam Mack Snyder" 
-                    className = "w-full max-w-180 h-auto object-contain mx-auto rounded-full ring-2"
-                />
+            <div className = "flex col-start-2 w-full hidden xl:block items-center p-10">
+                <div className = "ring-2 max-w-180 mx-auto rounded-full">
+                    <Image
+                        src = "/LinkedIn_2.png" 
+                        alt = "Portrait of Liam Mack Snyder" 
+                        className = "w-full object-contain mx-auto rounded-full"
+                        width = {720}
+                        height = {720}
+                        quality = {95}
+                        priority
+                    />
+                </div>
             </div>  
 
         </section> 
