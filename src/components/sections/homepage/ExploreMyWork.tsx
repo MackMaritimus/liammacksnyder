@@ -19,7 +19,7 @@ export default function ExploreMyWork () {
                 <button className = "w-full max-w-sm md:max-w-lg h-[550px] md:h-[750px] rounded-4xl bg-linear-to-b from-fuchsia-700 to-zinc-500 hover:scale-105 duration-300 flex flex-col ring-1 ring-gray-400">
                     {/* Design Work Button Image */}
                     <img
-                        src = "/Lion Line Art Transparent 1200-1200.png" 
+                        src = "/Lion_Line_Art_Transparent_1200_1200.png" 
                         alt = "Designs Preview" 
                         className = "w-64 md:w-80 h-64 md:h-80 object-contain overflow-visible mb-4 mt-12 mx-auto bg-[#272726] rounded-full ring-24 ring-[#272726]"
                     />
@@ -43,7 +43,7 @@ export default function ExploreMyWork () {
 
                     {/* Coding Work Button Image */}
                     <img
-                        src = "/Lion Line Art Transparent 1200-1200.png" 
+                        src = "/Lion_Line_Art_Transparent_1200_1200.png" 
                         alt = "Designs Preview" 
                         className = "w-64 md:w-80 h-64 md:h-80 object-contain overflow-visible mb-4 mt-12 mx-auto bg-[#272726] rounded-full ring-24 ring-[#272726]"
                     />

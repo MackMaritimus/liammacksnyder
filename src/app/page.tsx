@@ -7,7 +7,7 @@ import LayeredBubble from "@/components/ui/LayeredBubble";
 
 export default function HomePage() {
     return (
-        <main className = "min-h-screen bg-[#111111] text-white flex flex-col items-center space-y-16">
+        <main className = "min-h-screen bg-[#0a0a0a] text-white flex flex-col items-center space-y-16">
             
             { /* AboutMe Section With My Name, Personal Summary, and Picture of Mexplore My Work" Section With Design Work and Coding Work Portfolio Buttons */ }
             <AboutMe/>
