@@ -15,28 +15,28 @@ export default function AboutMe () {
                 {/* About Me Text Box and Text */}
                 
                     <h1 className = "text-3xl sm:text-[2.1rem] md:text-[40px] font-bold text-[#DADAD9] font-comic-sans">
-                        Liam Mack Snyder
+                        {"Liam Mack Snyder"}
                     </h1>
                 
 
                 <Body className = "max-w-2xl mt-6">
-                    Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website.
+                    {"Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website."}
                 </Body>
 
                 <Body className = "max-w-2xl mt-6 font-bold">
-                    Bachelor's of Science, Business Administration
+                    {"Bachelor's of Science, Business Administration"}
                 </Body>
 
                 <Body className = "max-w-2xl mt-0">
-                    Dual Concentrations: Computer Information Systems and Marketing
+                    {"Dual Concentrations: Computer Information Systems and Marketing"}
                 </Body>
 
                 <Body className = "max-w-2xl mt-0 italic">
-                    Certifications in Business App Development and B2B Selling
+                    {"Certifications in Business App Development and B2B Selling"}
                 </Body>
 
                 <Body className = "max-w-2xl mt-6">
-                    Fort Collins, CO
+                    {"Fort Collins, CO"}
                 </Body>
 
                 <Socials className = "mt-6" width = "30"/>
