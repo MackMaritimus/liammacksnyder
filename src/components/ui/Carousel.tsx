@@ -1,5 +1,6 @@
 "use client";
-import { useState, Children, useEffect, useRef } from "react";
+import { useState, Children } from "react";
+import useTallestChildHeight from "@/hooks/useTallestChildHeight";
 
 interface CarouselProps {
   children: React.ReactNode;
@@ -11,26 +12,11 @@ export default function Carousel({ children, className = "" }: CarouselProps) {
 
     const items = Children.toArray(children);
     const [index, setIndex] = useState(0);
-    const [containerHeight, setContainerHeight] = useState<number | undefined>(undefined);
-    const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-    useEffect(() => {
-        const observer = new ResizeObserver(() => {
-            const heights = itemRefs.current.map((el) => el?.offsetHeight || 0);
-            const maxHeight = Math.max(...heights);
-            setContainerHeight(maxHeight);
-        });
-
-        itemRefs.current.forEach((el) => {
-            if (el) observer.observe(el);
-        });
-
-        return () => observer.disconnect();
-    }, [items]);
-
+    const [itemRefs, maxElementHeight] = useTallestChildHeight(items.length);
 
     return (
-        <div className = {ClassName}  style = {{ height: containerHeight }}>
+        <div className = {ClassName}  style = {{ height: maxElementHeight }}>
             {items.map((child, i) => {
                 const isActive = i === index;
                 const isLeft = i === index - 1;
@@ -38,8 +24,8 @@ export default function Carousel({ children, className = "" }: CarouselProps) {
 
                 return (
                     <div
-                        ref={(el: HTMLDivElement | null) => {
-                            itemRefs.current[i] = el;
+                        ref={(el) => {
+                            itemRefs[i] = el;
                         }}
                         key = {i}
                         className = {`absolute transition-all duration-500 ${
