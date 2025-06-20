@@ -9,7 +9,7 @@ interface BodyProps {
 export default function Body ({ children, className = "" }:BodyProps) {
     
     return (
-        <p className = {"text-md text-zinc-300" + " " + className}>
+        <p className = {"text-md" + " " + className}>
             {children}
         </p>
     );

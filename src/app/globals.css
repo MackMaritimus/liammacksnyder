@@ -27,6 +27,11 @@ body {
 
 @layer utilities {
     .bg-night { background-color: #0a0a0a; }
+    .bg-eggshell { background-color: #DCDFCC }
 
     .text-night { color: #0a0a0a; }
+    .text-eggshell { color: #DCDFCC }
+
+    .ring-night { --tw-ring-color: #0a0a0a; }
+    .ring-eggshell { --tw-ring-color: #DCDFCC }
 }

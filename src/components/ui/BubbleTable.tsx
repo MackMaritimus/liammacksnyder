@@ -16,7 +16,7 @@ interface BubbleTableProps {
 function BubbleTable ({ title="", date="", company="", location="", description="", bullets = []}:BubbleTableProps) {
     
     return (
-        <div className = "mt-16 bg-neutral-800 rounded-[8px] ring-16 ring-neutral-800">               
+        <div className = "mt-16 bg-eggshell rounded-[8px] ring-16 ring-eggshell">          
             <div className = "grid grid-cols-2 mt-12 text-bottom">
                 <Body className = "text-left col-start-1 row-start-1 font-bold">
                     {title}
@@ -40,7 +40,7 @@ function BubbleTable ({ title="", date="", company="", location="", description=
                 {description}
             </BodySmall>
 
-            <BulletList items = {bullets} className = "text-sm text-zinc-300"/>
+            <BulletList items = {bullets} className = "text-sm"/>
         </div>
     );
 }

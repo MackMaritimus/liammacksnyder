@@ -9,7 +9,7 @@ interface BodySmallProps {
 export default function BodySmall ({ children, className = "" }:BodySmallProps) {
     
     return (
-        <p className = {"text-sm text-zinc-300" + " " + className}>
+        <p className = {"text-sm" + " " + className}>
             {children}
         </p>
     );
