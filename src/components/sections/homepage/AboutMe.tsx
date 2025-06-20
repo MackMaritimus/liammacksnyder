@@ -7,16 +7,16 @@ import Image from "next/image";
 export default function AboutMe () {
 
     return(     
-        <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-30 items-center">
+        <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-15 items-center">
 
             {/* About Me Text Container */}
             <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start mx-16 xl:ml-[25%]">
                 
                 {/* About Me Text Box and Text */}
                 
-                    <h1 className = "text-3xl sm:text-[2.1rem] md:text-[40px] font-bold text-[#DADAD9] font-comic-sans">
-                        {"Liam Mack Snyder"}
-                    </h1>
+                <h1 className = "text-3xl sm:text-[2.1rem] md:text-[40px] font-bold text-[#DADAD9] font-comic-sans">
+                    {"Liam Mack Snyder"}
+                </h1>
                 
 
                 <Body className = "max-w-2xl mt-6">

@@ -26,15 +26,7 @@ body {
 }
 
 @layer utilities {
-    .bg-richblack { background-color: #02111b; }
-    .bg-onyx { background-color: #3f4045; }
-    .bg-raisinblack { background-color: #30292f; }
-    .bg-paynesgray { background-color: #5d737e; }
-    .bg-offwhite { background-color: #fcfcfc; }
+    .bg-night { background-color: #0a0a0a; }
 
-    .text-richblack { color: #02111b; }
-    .text-onyx { color: #3f4045; }
-    .text-night { color: #111111; }
-    .text-paynesgray { color: #5d737e; }
-    .text-offwhite { color: #fcfcfc; }
+    .text-night { color: #0a0a0a; }
 }

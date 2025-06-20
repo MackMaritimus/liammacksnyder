@@ -36,7 +36,7 @@ function BubbleTable ({ title="", date="", company="", location="", description=
         
             </div>
             
-            <BodySmall className = "text-left max-w-150">
+            <BodySmall className = "text-left">
                 {description}
             </BodySmall>
 

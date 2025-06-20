@@ -1,6 +1,6 @@
 import BubbleTable from "@/components/ui/BubbleTable";
 import Bubble1 from "@/components/ui/Bubble1";
-import CompDivider from "@/components/ui/CompDivider";
+import Carousel from "@/components/ui/Carousel";
 
 // Resume Section With Qualifications
 
@@ -8,7 +8,9 @@ export default function Resume () {
 
     return (
         <section className = "w-full flex flex-col mb-0 items-center text-wrap">
-                
+
+            <Carousel className = "mb-24">
+
                 {/* Education Bubble */}
                 <Bubble1 header = "Education">
                     
@@ -30,8 +32,6 @@ export default function Resume () {
                         description = "Certification in Business to Business Selling"
                     />
                 </Bubble1>
-    
-                <CompDivider/>
                 
                 {/* Professional Experience Bubble */}
                 <Bubble1 header = "Professional Experience">
@@ -65,8 +65,6 @@ export default function Resume () {
                             "Delivered member-focused service while managing long lines and high-pressure situations"]}
                     />
                 </Bubble1>
-
-                <CompDivider/>
                 
                 {/* Projects Bubble */}
                 <Bubble1 header = "Projects">
@@ -93,25 +91,8 @@ export default function Resume () {
                             "Perform both fundamental and technical analysis to assess entries and exits for trades"]}
                     />
 
-                    <BubbleTable
-                        title = "2D Unity 8-Bit RPG Prototype" 
-                        date = "Nov 2024 - Dec 2024" 
-                        description = "For practice with both game engines and C#, designed the first section of a map, implemented basic scripts, and solved problems while documenting my process on Notion."
-                        bullets = {[
-                            "Implemented C# scripts for player movement, camera switching between game objects, and collision with a tilemap",
-                            "Designed a map to follow logical progression, area themes, and allow for player freedom, backtracking, and exploration"]}
-                    />
-
-                    <BubbleTable
-                        title = "User Customization iOS Icon Pack" 
-                        date = "Oct 2024 - Nov 2024" 
-                        description = "Designed over 150 app icons for user customization tailored for launch on Etsy using Photoshop and Illustrator."
-                        bullets = {[
-                            "Completed over 150 icons, improving process efficiency and methods as I worked, in the span of 1 month",
-                            "Performed competitor analysis, designed icons for a target market of women, identified keywords, and researched pricing"]}
-                    />
-
                 </Bubble1>
+            </Carousel>
         </section>
     );
 }

@@ -30,7 +30,7 @@ export default function Socials ({className = "", width = "9"}:SocialsProps) {
                 />
             </a>
 
-            <a href = "mailto:LiamMackSnyder@outlook.com" target = "_blank" rel = "noopener noreferrer" className = "flex">
+            <a href = "mailto:LiamMackSnyder@outlook.com" className = "flex">
                 <Image
                     src = "/Envelope_Icon.svg"
                     width = {parseInt(width)}
