@@ -1,5 +1,4 @@
-import BubbleTable from "@/components/ui/BubbleTable";
-import Bubble1 from "@/components/ui/Bubble1";
+import { BubbleTable, Bubble1 } from "@/components/ui/ResumeBubble";
 import Carousel from "@/components/ui/Carousel";
 
 // Resume Section With Qualifications
@@ -99,6 +98,7 @@ export default function Resume () {
                 {professionalExperienceBubble}
                 {projectsBubble}
             </Carousel>
+
 
             {/* Mobile Resume Section */ }
             <div className = "gap-y-4 flex flex-col w-full px-6 overflow-hidden xl:hidden items mb-15">

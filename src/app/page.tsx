@@ -1,5 +1,5 @@
 import AboutMe from "@/components/sections/homepage/AboutMe";
-import Footer from "@/components/sections/homepage/Footer";
+import Footer from "@/components/layout/Footer";
 import SectionDivider from "@/components/ui/SectionDivider";
 import Resume from "@/components/sections/homepage/Resume";
 
