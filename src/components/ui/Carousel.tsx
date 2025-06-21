@@ -32,7 +32,7 @@ export default function Carousel({ children, className = "" }: CarouselProps) {
                             isActive
                                 ? "scale-100 z-20"
                                 : isLeft || isRight
-                                ? "z-10 opacity-50 cursor-pointer"
+                                ? "z-10 opacity-50 cursor-pointer blur-sm"
                                 : "scale-50 z-0 opacity-0 pointer-events-none"
                             }`}
                         style={{

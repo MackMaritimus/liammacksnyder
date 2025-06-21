@@ -13,15 +13,16 @@ interface BubbleTableProps {
     location?: string;
     description?: string;
     bullets?: string[];
+    onClick?: () => void;
 }
 
-function BubbleTable ({ title="", date="", company="", location="", description="", bullets = []}:BubbleTableProps) {
+function BubbleTable ({ title="", date="", company="‎", location="‎", description="", bullets = [], onClick}:BubbleTableProps) {
 
     return (
         <div 
-            className = "mt-16 bg-eggshell rounded-[8px] ring-16 ring-eggshell">    
+            className = "bg-eggshell rounded-[16px] p-4 hover:cursor-pointer text-night" onClick = {onClick}>
 
-            <div className = "grid grid-cols-2 mt-12 text-bottom">
+            <div className = "grid grid-cols-2 text-bottom">
                 <Body className = "text-left col-start-1 row-start-1 font-bold">
                     {title}
                 </Body>
@@ -37,18 +38,14 @@ function BubbleTable ({ title="", date="", company="", location="", description=
                 <Body className = "text-right text-top col-start-2 row-start-2 italic">
                     {location}
                 </Body>
-        
             </div>
-            
+
             <BodySmall className = "text-left">
                 {description}
             </BodySmall>
 
             <BulletList items = {bullets} className = "text-sm"/>
 
-           
-
-            
         </div>
     );
 }
@@ -64,7 +61,7 @@ function Bubble1({ children, header = "" }:Bubble1Props) {
 
     return (
         <div className = "shadow-[0_4px_20px_rgba(0,0,0,0.3)] text-night flex flex-col text-center bg-linear-to-br from-pink-600 to-cyan-700 rounded-4xl mx-auto max-w-full w-full md:w-190 justify-center md:justify-start items-center">
-            <div className = "w-full bg-white/10 p-10 xl:p-15 rounded-4xl">
+            <div className = "w-full bg-white/10 p-10 xl:p-15 rounded-4xl space-y-6">
                 <div className = "bg-eggshell px-6 py-4 w-[95%] sm:w-[85%] xl:w-[75%] mx-auto rounded-full">
                     <Head3>
                         {header}
