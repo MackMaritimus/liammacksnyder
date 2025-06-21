@@ -34,4 +34,14 @@ body {
 
     .ring-night { --tw-ring-color: #0a0a0a; }
     .ring-eggshell { --tw-ring-color: #DCDFCC }
+
+    .shadow-night {
+    --tw-shadow-color: #0a0a0a;
+    box-shadow: 0 4px 12px var(--tw-shadow-color);
+    }
+
+    .shadow-eggshell {
+    --tw-shadow-color: #DCDFCC;
+    box-shadow: 0 4px 12px var(--tw-shadow-color);
+    }
 }

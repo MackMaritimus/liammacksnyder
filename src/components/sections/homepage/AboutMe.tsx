@@ -47,7 +47,7 @@ export default function AboutMe () {
 
             {/* About me Image */}
             <div className = "flex col-start-2 w-full hidden xl:block items-center p-10">
-                <div className = "ring-2 max-w-180 mx-auto rounded-full">
+                <div className = "ring-4 max-w-180 mx-auto rounded-full">
                     <Image
                         src = "/LinkedIn_2.png" 
                         alt = "Portrait of Liam Mack Snyder" 
