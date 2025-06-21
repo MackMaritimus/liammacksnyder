@@ -101,7 +101,7 @@ export default function Resume () {
 
 
             {/* Mobile Resume Section */ }
-            <div className = "gap-y-4 flex flex-col w-full px-6 overflow-hidden xl:hidden items mb-15">
+            <div className = "gap-y-8 flex flex-col w-full px-6 overflow-hidden xl:hidden items mb-15">
                 {educationBubble}
                 {professionalExperienceBubble}
                 {projectsBubble}

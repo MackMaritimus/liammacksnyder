@@ -5,7 +5,7 @@ import Resume from "@/components/sections/homepage/Resume";
 
 export default function HomePage() {
     return (
-        <main className = "min-h-screen bg-night text-white flex flex-col items-center space-y-16 ">
+        <main className = "min-h-screen bg-night text-white flex flex-col items-center">
             
             { /* AboutMe Section With My Name, Personal Summary, and Picture of Mexplore My Work" Section With Design Work and Coding Work Portfolio Buttons */ }
             <AboutMe/>

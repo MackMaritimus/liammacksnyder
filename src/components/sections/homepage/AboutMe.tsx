@@ -10,7 +10,7 @@ export default function AboutMe () {
         <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-15 items-center">
 
             {/* About Me Text Container */}
-            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start mx-16 xl:ml-[25%]">
+            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start mx-16 xl:ml-[25%] mb-12 xl:mb-0">
                 
                 {/* About Me Text Box and Text */}
                 
@@ -46,19 +46,17 @@ export default function AboutMe () {
             
 
             {/* About me Image */}
-            <div className = "flex col-start-2 w-full hidden xl:block items-center">
-                <div className = "p-10">
-                    <div className = "ring-2 max-w-180 mx-auto rounded-full">
-                        <Image
-                            src = "/LinkedIn_2.png" 
-                            alt = "Portrait of Liam Mack Snyder" 
-                            className = "w-full object-contain mx-auto rounded-full"
-                            width = {720}
-                            height = {720}
-                            quality = {95}
-                            priority
-                        />
-                    </div>
+            <div className = "flex col-start-2 w-full hidden xl:block items-center p-10">
+                <div className = "ring-2 max-w-180 mx-auto rounded-full">
+                    <Image
+                        src = "/LinkedIn_2.png" 
+                        alt = "Portrait of Liam Mack Snyder" 
+                        className = "w-full object-contain mx-auto rounded-full"
+                        width = {720}
+                        height = {720}
+                        quality = {95}
+                        priority
+                    />
                 </div>
             </div>  
 
