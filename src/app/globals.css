@@ -44,4 +44,13 @@ body {
     --tw-shadow-color: #DCDFCC;
     box-shadow: 0 4px 12px var(--tw-shadow-color);
     }
+
+    .shadow-default {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .bg-noise {
+    background-image: repeating-linear-gradient(0deg, #00000005 0px, #00000005 1px, transparent 1px, transparent 2px);
+    }
+
 }

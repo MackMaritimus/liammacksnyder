@@ -4,7 +4,7 @@ import Body from "@/components/ui/Body";
 import BodySmall from "@/components/ui/BodySmall";
 import BulletList from "./BulletList";
 
-// Bubble Table Component, Made for Resume Section. Takes Title, Date, Company, Location, and Description as Params.
+// Bubble Table Component, Made for Resume Section. Takes Title, Date, Company, Location, Description, className, onClick, and isActive to determine on click behavior, as Params.
 
 interface BubbleTableProps {
     title?: string;
@@ -19,7 +19,7 @@ interface BubbleTableProps {
 
 function BubbleTable ({ title="", date="", company="‎", location="‎", description="", bullets = [], className = "", onClick}:BubbleTableProps) {
 
-    const ClassName = `bg-eggshell rounded-[16px] p-4 text-night ${className}`
+    const ClassName = `bg-eggshell rounded-[16px] p-4 text-night shadow-default ${className}`
 
     return (
 
@@ -65,9 +65,9 @@ interface Bubble1Props {
 function Bubble1({ children, header = "" }:Bubble1Props) {
 
     return (
-        <div className = "shadow-[0_4px_20px_rgba(0,0,0,0.3)] text-night flex flex-col text-center bg-linear-to-br from-pink-600 to-cyan-700 rounded-4xl mx-auto max-w-full w-full md:w-190 justify-center md:justify-start items-center">
+        <div className = "shadow-default text-night flex flex-col text-center bg-linear-to-br from-pink-500/70 xl:from-pink-600/90 to-cyan-600/70 xl:to-cyan-700/90 rounded-4xl mx-auto max-w-full w-full md:w-190 justify-center md:justify-start items-center">
             <div className = "w-full bg-white/10 p-6 xl:p-15 rounded-4xl space-y-6">
-                <div className = "bg-eggshell px-6 py-4 w-[95%] sm:w-[85%] xl:w-[75%] mx-auto rounded-full">
+                <div className = "shadow-default bg-eggshell px-6 py-4 w-[95%] sm:w-[85%] xl:w-[75%] mx-auto rounded-full">
                     <Head3>
                         {header}
                     </Head3>

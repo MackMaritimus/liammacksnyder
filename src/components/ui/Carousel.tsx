@@ -18,9 +18,13 @@ export default function Carousel({ children, className = "" }: CarouselProps) {
     return (
         <div className = {ClassName}  style = {{ height: maxElementHeight }}>
             {items.map((child, i) => {
+                
+                const lastIndex = items.length - 1;
+
                 const isActive = i === index;
-                const isLeft = i === index - 1;
-                const isRight = i === index + 1;
+                const isLeft = i === (index === 0 ? lastIndex : index - 1);
+                const isRight = i === (index === lastIndex ? 0 : index + 1);
+
 
                 return (
                     <div
@@ -47,7 +51,9 @@ export default function Carousel({ children, className = "" }: CarouselProps) {
 
                         onClick={() => setIndex(i)}
                     >
-                        {child}
+                        <div className={isActive ? "" : "pointer-events-none"}>
+                            {child}
+                        </div>
                     </div>
                 );
             })}
