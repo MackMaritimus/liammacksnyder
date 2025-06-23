@@ -1,6 +1,7 @@
 import Body from "@/components/ui/Body";
 import Socials from "@/components/ui/Socials";
 import Image from "next/image";
+import Skills from "@/components/ui/Skills";
 
 // AboutMe Section With My Name, Personal Summary, and Picture of Me
 
@@ -41,9 +42,9 @@ export default function AboutMe () {
 
                 <Socials className = "mt-6" width = "30"/>
 
-            </div> 
+                <Skills/>
 
-            
+            </div> 
 
             {/* About me Image */}
             <div className = "flex col-start-2 w-full hidden xl:block items-center p-10">

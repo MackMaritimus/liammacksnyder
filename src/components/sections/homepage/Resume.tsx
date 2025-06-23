@@ -160,7 +160,7 @@ export default function Resume () {
 
     return (
         <section className = "w-full flex flex-col mb-0 items-center text-wrap">
-
+            
             {/* Desktop Resume Section */ }
             <Carousel className = "hidden xl:flex mb-12">
                 {educationBubble}
