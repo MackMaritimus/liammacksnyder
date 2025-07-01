@@ -36,13 +36,13 @@ export default function AboutMe () {
                     {"Certifications in Business App Development and B2B Selling"}
                 </Body>
 
+                <Skills/>
+
                 <Body className = "max-w-2xl mt-6">
                     {"Fort Collins, CO"}
                 </Body>
 
                 <Socials className = "mt-6" width = "30"/>
-
-                <Skills/>
 
             </div> 
 

@@ -4,6 +4,8 @@ import Body from "@/components/ui/Body";
 import BodySmall from "@/components/ui/BodySmall";
 import BulletList from "./BulletList";
 
+// This class contains two componenets; BubbleTable and Bubble1
+
 // Bubble Table Component, Made for Resume Section. Takes Title, Date, Company, Location, Description, className, onClick, and isActive to determine on click behavior, as Params.
 
 interface BubbleTableProps {

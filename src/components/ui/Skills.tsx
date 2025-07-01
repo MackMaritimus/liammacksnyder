@@ -7,15 +7,15 @@ export default function Skills () {
         <div className = "mt-6">
 
                     <p className = "text-center xl:text-left my-auto text-base text-wrap font-normal"> 
-                        Next.js ; Tailwind CSS ; Typescript ; Javascript ; React ; React Native ; Java ; C# ; Python ; SQL 
+                        Languages and Frameworks: Next.js ; Tailwind CSS ; Typescript ; Javascript ; React ; React Native ; Java ; C# ; Python ; SQL 
                     </p>
 
 
-                    <p className = "text-center xl:text-left my-auto text-base text-wrap font-normal"> 
+                    <p className = "text-center xl:text-left my-auto text-base text-wrap font-normal mt-2"> 
                         VS Code ; Snowflake ; Eclipse ; Git ; GitHub ; Unity ; Vercel ; Figma ; Adobe Suite ; Notion
                     </p>
 
-                    <p className = "text-center xl:text-left my-auto text-base text-wrap font-normal"> 
+                    <p className = "text-center xl:text-left my-auto text-base text-wrap font-normal mt-2"> 
                         Debugging ; Troubleshooting ; Full-Stack Development ; Scrum/Agile ; Documentation ; UX 
                     </p>     
         </div>

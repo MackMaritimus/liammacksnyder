@@ -3,7 +3,6 @@ import { BubbleTable, Bubble1 } from "@/components/ui/ResumeBubble";
 import Carousel from "@/components/ui/Carousel";
 import { useState } from "react";
 import StaticOverlay from "@/components/ui/StaticOverlay";
-import ResumeDownload from "@/components/ui/ResumeDownload";
 
 // Resume Section With Qualifications
 
@@ -175,9 +174,6 @@ export default function Resume () {
                 {professionalExperienceBubble}
                 {projectsBubble}
             </div>
-
-            {/* Resume Download Button */ }
-            <ResumeDownload/>
 
             {/* Overlay Bubble Rendering */}
             {selectedBubble === 1 && (
