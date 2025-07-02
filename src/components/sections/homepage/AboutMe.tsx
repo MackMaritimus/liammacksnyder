@@ -24,23 +24,11 @@ export default function AboutMe () {
                     {"Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website."}
                 </Body>
 
-                <Body className = "max-w-2xl mt-6 font-bold">
-                    {"Bachelor's of Science, Business Administration"}
-                </Body>
-
-                <Body className = "max-w-2xl mt-0">
-                    {"Dual Concentrations: Computer Information Systems and Marketing"}
-                </Body>
-
-                <Body className = "max-w-2xl mt-0 italic">
-                    {"Certifications in Business App Development and B2B Selling"}
-                </Body>
-
-                <Skills/>
-
                 <Body className = "max-w-2xl mt-6">
                     {"Fort Collins, CO"}
                 </Body>
+
+                <Skills/>
 
                 <Socials className = "mt-6" width = "30"/>
 
