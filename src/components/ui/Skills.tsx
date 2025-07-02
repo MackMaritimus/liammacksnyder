@@ -2,83 +2,92 @@
 // Skills component with simple list of Languages and Frameworks, Tools, and Other Skills I have.
 
 'use client'
-import ExpandTable from "./ExpandTable"
+import ExpandTable, { ExpandContext } from "./ExpandTable";
+import { useContext } from "react";
 
 export default function Skills () {
+    return (
+        <ExpandTable 
+            arrowWidth="w-12"
+            expandedHeight="max-h-full"
+            collapsedHeight="max-h-23"
+            expandTableClassName="mt-12 mx-6 min-[530px]:mx-16"
+            arrowClassName="mx-auto mt-6"
+        >
+            <SkillsContent/>
+        </ExpandTable>
+    );
+}
 
+function SkillsContent() {
+    const { expanded } = useContext(ExpandContext);
 
     return (
-        <div className = "bg-linear-to-br from-neutral-800 to-gray-900 rounded-xl p-4 my-6 shadow-default">
-            <ExpandTable 
-                arrowWidth = "w-12"
-                expandedHeight = "max-h-full"
-                collapsedHeight = "max-h-20 md:max-h-16 xl:max-h-12"
-                expandTableClassName = "mt-6"
-                arrowClassName = "mx-auto mt-6"
-                >
-
-                <div className = "grid grid-cols-3 grid-rows-[min-content_min-content_auto] gap-6">
-                    {/* Languages and Frameworks Column */}
-                    <div className = "bg-teal-700 rounded-lg flex items-center justify-center shadow-default">
-                        <p className = "text-center">
-                            Languages and Frameworks
-                        </p>
-                    </div>
-                    <div className = "row-start-2">
-                        <p className = "text-center text-base text-wrap"> 
-                            Next.js <br />
-                            Tailwind CSS <br />
-                            Typescript <br />
-                            Javascript <br />
-                            React <br />
-                            React Native <br />
-                            Java <br />
-                            C# <br />
-                            Python <br />
+        <div className = "grid grid-cols-3 gap-6 p-1">
+            {/* Languages and Frameworks Column */}
+            <div className = "shadow-default flex flex-col">
+                <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-sky-600 rounded-lg" : ""}`}>
+                    <div className = {`bg-sky-600 flex items-center justify-center min-h-22 min-[530px]:min-h-16 p-2 ${expanded ? "rounded-t-lg" : "ring-2 ring-sky-600 rounded-lg"}`}>
+                        <p className = "text-center">Languages and Frameworks</p>
+                    </div>   
+                    <div className = {`bg-gray-800 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>   
+                        <p className = "text-center text-base text-wrap m-1 my-4">
+                            Next.js <br/>
+                            Tailwind CSS <br/>
+                            Typescript <br/>
+                            Javascript <br/>
+                            React <br/>
+                            React Native <br/>
+                            Java <br/>
+                            C# <br/>
+                            Python <br/>
                             SQL
                         </p>
-                    </div>
+                    </div> 
+                </div>
+            </div>
 
-
-                    {/* Tools Column */}
-                    <div className = "bg-amber-600 rounded-lg flex items-center justify-center shadow-default">
-                        <p className = "text-center">
-                            Tools
-                        </p>
+            {/* Tools Column */}
+            <div className = "shadow-default flex flex-col">
+                <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-pink-600 rounded-lg" : ""}`}>
+                    <div className = {`bg-pink-600 flex items-center justify-center min-h-22 min-[530px]:min-h-16 p-2 ${expanded ? "rounded-t-lg" : "ring-2 ring-pink-600 rounded-lg"}`}>
+                        <p className = "text-center">Tools</p>
                     </div>
-                    <div className = "row-start-2">
-                        <p className = "text-center text-base text-wrap row-start-2"> 
-                            VS Code <br />
-                            Snowflake <br />
-                            Eclipse <br />
-                            Git <br />
-                            GitHub <br />
-                            Unity <br />
-                            Vercel <br />
-                            Figma <br />
-                            Adobe Suite <br />
+                    <div className = {`bg-fuchsia-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
+                        <p className = "text-center text-base text-wrap m-1 my-4">
+                            VS Code <br/>
+                            Snowflake <br/>
+                            Eclipse <br/>
+                            Git <br/>
+                            GitHub <br/>
+                            Unity <br/>
+                            Vercel <br/>
+                            Figma <br/>
+                            Adobe Suite <br/>
                             Notion
                         </p>
                     </div>
-        
-                    {/* Other Column */}
-                    <div className = "bg-emerald-800 rounded-lg flex items-center justify-center shadow-default">
-                        <p className = "text-center">
-                            Other
-                        </p>
+                </div>
+            </div>
+
+            {/* Other Column */}
+            <div className = "shadow-default flex flex-col">   
+                <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-slate-700 rounded-lg" : ""}`}>
+                    <div className = {`bg-slate-700 flex items-center justify-center min-h-22 min-[530px]:min-h-16 p-2 ${expanded ? "rounded-t-lg" : "ring-2 ring-slate-700 rounded-lg"}`}>
+                        <p className = "text-center">Other</p>
                     </div>
-                    <div className = "row-start-2">
-                        <p className = "text-center text-base text-wrap row-start-2"> 
-                            Debugging <br />
-                            Troubleshooting <br />
-                            Full-Stack Development <br />
-                            Scrum/Agile <br />
-                            Documentation <br />
-                            UX 
+                    <div className = {`bg-gray-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
+                        <p className = "text-center text-base text-wrap m-1 my-4 break-words">
+                            Debugging <br/>
+                            Troubleshooting <br/>
+                            Full-Stack Development <br/>
+                            Scrum/Agile <br/>
+                            Documentation <br/>
+                            UX
                         </p>
                     </div>
                 </div>
-            </ExpandTable>
+            </div> 
         </div>
     );
 }

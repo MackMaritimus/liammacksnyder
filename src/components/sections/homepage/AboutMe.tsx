@@ -11,26 +11,31 @@ export default function AboutMe () {
         <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-15 items-center">
 
             {/* About Me Text Container */}
-            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start mx-16 xl:ml-[25%] mb-12 xl:mb-0">
+            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start xl:ml-[25%] mb-12">
                 
                 {/* About Me Text Box and Text */}
-                
-                <h1 className = "text-3xl sm:text-[2.1rem] md:text-[40px] font-bold text-[#DADAD9] font-comic-sans">
-                    {"Liam Mack Snyder"}
-                </h1>
-                
+                <div className = "flex flex-col">
+                    <div className = "mx-16">
+                        <h1 className = "text-[2.1rem] md:text-[40px] font-bold">
+                            {"Liam Mack Snyder"}
+                        </h1>
+                        
 
-                <Body className = "max-w-2xl mt-6">
-                    {"Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website."}
-                </Body>
+                        <Body className = "max-w-2xl mt-6">
+                            {"Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website."}
+                        </Body>
 
-                <Body className = "max-w-2xl mt-6">
-                    {"Fort Collins, CO"}
-                </Body>
+                        <Body className = "max-w-2xl mt-6">
+                            {"Fort Collins, CO"}
+                        </Body>
+                    </div>
 
-                <Skills/>
+                    
 
-                <Socials className = "mt-6" width = "30"/>
+                    <Socials className = "mx-auto xl:mx-16 mt-6" width = "30"/>
+
+                    <Skills/>
+                </div>
 
             </div> 
 

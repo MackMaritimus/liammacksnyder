@@ -2,7 +2,7 @@
 // This is a componenet that places a table around another component,
 // and limits the height of that other component until the clicking the expand arrow at the bottom of the table
 
-import { useState } from "react";
+import { useState, createContext } from "react";
 import Collapse_Arrow from "@/assets/Collapse_Arrow.svg";
 import Expand_Arrow from "@/assets/Expand_Arrow.svg";
 
@@ -15,6 +15,8 @@ interface ExpandTableProps {
     children: React.ReactNode
 }
 
+export const ExpandContext = createContext({ expanded:false })
+
 export default function ExpandTable ({arrowWidth, expandTableClassName = "", arrowClassName = "", expandedHeight, collapsedHeight, children}:ExpandTableProps) {
 
     const [expanded, setExpanded] = useState(false);
@@ -23,42 +25,45 @@ export default function ExpandTable ({arrowWidth, expandTableClassName = "", arr
     const arrowClassNameConc = `flex ${arrowClassName}`
     const arrowWidthConc = `${arrowWidth} h-auto`
 
+    
+
     return (
+        <ExpandContext.Provider value = {{ expanded }}>
+            <div className = {expandTableClassNameConc}>
 
-        <div className = {expandTableClassNameConc}>
-
-            <div className = {expandedClass}>
-                {children}
-            </div>
+                <div className = {expandedClass}>
+                    {children}
+                </div>
 
 
-            <div className = {arrowClassNameConc}>
-                
-                <button 
-                    className = {`${expanded ? "hidden" : ""}`} 
-                    onClick = {() => setExpanded(true)}
-                    >
+                <div className = {arrowClassNameConc}>
                     
-                    <Expand_Arrow
-                        className = {arrowWidthConc}
-                    />
+                    <button 
+                        className = {`${expanded ? "hidden" : ""}`} 
+                        onClick = {() => setExpanded(true)}
+                        >
+                        
+                        <Expand_Arrow
+                            className = {arrowWidthConc}
+                        />
 
-                </button>
+                    </button>
 
-                <button 
-                    className = {`${expanded ? "" : "hidden"}`}
-                    onClick = {() => setExpanded(false)}
-                    >
+                    <button 
+                        className = {`${expanded ? "" : "hidden"}`}
+                        onClick = {() => setExpanded(false)}
+                        >
+                        
+                        <Collapse_Arrow
+                            className = {arrowWidthConc}
+                        />
+
+                    </button>
                     
-                    <Collapse_Arrow
-                        className = {arrowWidthConc}
-                    />
+                </div>
 
-                </button>
-                
             </div>
-
-        </div>
+        </ExpandContext.Provider>
 
     );
 
