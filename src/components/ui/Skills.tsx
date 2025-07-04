@@ -23,7 +23,7 @@ function SkillsContent() {
     const { expanded } = useContext(ExpandContext);
 
     return (
-        <div className = "grid grid-cols-3 gap-6 p-1 text-sm max-[580px]:text-xs break-all">
+        <div className = "grid grid-cols-3 gap-6 p-1 text-sm max-[580px]:text-xs text-wrap">
             {/* Languages and Frameworks Column */}
             <div className = "shadow-default flex flex-col">
                 <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-sky-600 rounded-lg" : ""}`}>
@@ -77,7 +77,7 @@ function SkillsContent() {
                         <p className = "text-center">Other</p>
                     </div>
                     <div className = {`bg-gray-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
-                        <p className = "text-center m-1 my-4">
+                        <p className = "text-center text-wrap m-1 my-4">
                             Debugging <br/>
                             Troubleshooting <br/>
                             Full-Stack Development <br/>
