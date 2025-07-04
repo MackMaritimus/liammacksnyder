@@ -8,14 +8,14 @@ import Skills from "@/components/ui/Skills";
 export default function AboutMe () {
 
     return(     
-        <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-15 items-center">
+        <section className = "grid grid-cols-1 xl:grid-cols-2 gap-x-4 w-full mt-15 items-center p-6">
 
             {/* About Me Text Container */}
-            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full items-center xl:items-start xl:ml-[25%] mb-12">
+            <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full xl:max-w-160 items-center xl:items-start xl:ml-[25%] mb-12">
                 
                 {/* About Me Text Box and Text */}
-                <div className = "flex flex-col">
-                    <div className = "mx-16">
+                <div className = "flex flex-col max-w-135 xl:max-w-full">
+                    <div className = "">
                         <h1 className = "text-[2.1rem] md:text-[40px] font-bold">
                             {"Liam Mack Snyder"}
                         </h1>
@@ -32,7 +32,7 @@ export default function AboutMe () {
 
                     
 
-                    <Socials className = "mx-auto xl:mx-16 mt-6" width = "30"/>
+                    <Socials className = "mx-auto xl:mx-0 mr-auto mt-6" width = "30"/>
 
                     <Skills/>
                 </div>

@@ -6,7 +6,7 @@ import Panels from "@/components/sections/homepage/Panels";
 
 export default function HomePage() {
     return (
-        <main className = "min-h-screen bg-night text-white flex flex-col items-center">
+        <main className = "min-h-screen bg-night text-white flex flex-col items-center max-w-[2180px] mx-auto">
             
             { /* AboutMe Section With My Name, Personal Summary, and Picture of Me */ }
             <AboutMe/>

@@ -11,7 +11,7 @@ export default function Skills () {
             arrowWidth="w-12"
             expandedHeight="max-h-full"
             collapsedHeight="max-h-23"
-            expandTableClassName="mt-12 mx-6 min-[530px]:mx-16"
+            expandTableClassName="mt-12"
             arrowClassName="mx-auto mt-6"
         >
             <SkillsContent/>
@@ -23,7 +23,7 @@ function SkillsContent() {
     const { expanded } = useContext(ExpandContext);
 
     return (
-        <div className = "grid grid-cols-3 gap-6 p-1">
+        <div className = "grid grid-cols-3 gap-6 p-1 text-sm max-[580px]:text-xs break-all">
             {/* Languages and Frameworks Column */}
             <div className = "shadow-default flex flex-col">
                 <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-sky-600 rounded-lg" : ""}`}>
@@ -31,7 +31,7 @@ function SkillsContent() {
                         <p className = "text-center">Languages and Frameworks</p>
                     </div>   
                     <div className = {`bg-gray-800 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>   
-                        <p className = "text-center text-base text-wrap m-1 my-4">
+                        <p className = "text-center text-wrap m-1 my-4">
                             Next.js <br/>
                             Tailwind CSS <br/>
                             Typescript <br/>
@@ -54,7 +54,7 @@ function SkillsContent() {
                         <p className = "text-center">Tools</p>
                     </div>
                     <div className = {`bg-fuchsia-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
-                        <p className = "text-center text-base text-wrap m-1 my-4">
+                        <p className = "text-center text-wrap m-1 my-4">
                             VS Code <br/>
                             Snowflake <br/>
                             Eclipse <br/>
@@ -77,7 +77,7 @@ function SkillsContent() {
                         <p className = "text-center">Other</p>
                     </div>
                     <div className = {`bg-gray-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
-                        <p className = "text-center text-base text-wrap m-1 my-4 break-words">
+                        <p className = "text-center m-1 my-4">
                             Debugging <br/>
                             Troubleshooting <br/>
                             Full-Stack Development <br/>
