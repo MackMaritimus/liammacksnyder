@@ -23,7 +23,7 @@ export default function Socials ({className = "", width = 9}:SocialsProps) {
 
             <a href = "https://github.com/MackMaritimus" target = "_blank" rel = "noopener noreferrer" className = "flex">
                 <Image
-                    src = "./gitHub_invertocat_light.svg"
+                    src = "./github_invertocat_light.svg"
                     width = {width}
                     height = {width}
                     alt = "Liam Mack Snyder GitHub"
