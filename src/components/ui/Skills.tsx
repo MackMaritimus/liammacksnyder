@@ -11,7 +11,7 @@ export default function Skills () {
             arrowWidth="w-12"
             expandedHeight="max-h-full"
             collapsedHeight="max-h-23"
-            expandTableClassName="mt-12"
+            expandTableClassName="mt-6 max-w-lg w-full"
             arrowClassName="mx-auto mt-6"
         >
             <SkillsContent/>
@@ -23,14 +23,15 @@ function SkillsContent() {
     const { expanded } = useContext(ExpandContext);
 
     return (
-        <div className = "grid grid-cols-3 gap-6 p-1 text-sm max-[580px]:text-xs text-wrap">
+
+        <div className = "grid grid-cols-2 gap-6 text-sm max-[430px]:text-xs text-wrap">
             {/* Languages and Frameworks Column */}
-            <div className = "shadow-default flex flex-col">
-                <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-sky-600 rounded-lg" : ""}`}>
-                    <div className = {`bg-sky-600 flex items-center justify-center min-h-22 min-[530px]:min-h-16 p-2 ${expanded ? "rounded-t-lg" : "ring-2 ring-sky-600 rounded-lg"}`}>
-                        <p className = "text-center">Languages and Frameworks</p>
+            <div className = "shadow-default flex flex-col w-full">
+                <div className = {`flex flex-col h-full ${expanded ? "rounded-lg" : ""}`}>
+                    <div className = {`bg-cyan-600/90 flex items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
+                        <p>Technologies</p>
                     </div>   
-                    <div className = {`bg-gray-800 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>   
+                    <div className = {`bg-gray-800/60 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>   
                         <p className = "text-center text-wrap m-1 my-4">
                             Next.js <br/>
                             Tailwind CSS <br/>
@@ -48,12 +49,12 @@ function SkillsContent() {
             </div>
 
             {/* Tools Column */}
-            <div className = "shadow-default flex flex-col">
-                <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-pink-600 rounded-lg" : ""}`}>
-                    <div className = {`bg-pink-600 flex items-center justify-center min-h-22 min-[530px]:min-h-16 p-2 ${expanded ? "rounded-t-lg" : "ring-2 ring-pink-600 rounded-lg"}`}>
-                        <p className = "text-center">Tools</p>
+            <div className = "shadow-default flex flex-col w-full">
+                <div className = {`flex flex-col h-full ${expanded ? "rounded-lg" : ""}`}>
+                    <div className = {`bg-pink-600/90 flex items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
+                        <p>Tools</p>
                     </div>
-                    <div className = {`bg-fuchsia-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
+                    <div className = {`bg-fuchsia-950/50 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
                         <p className = "text-center text-wrap m-1 my-4">
                             VS Code <br/>
                             Snowflake <br/>
@@ -70,24 +71,6 @@ function SkillsContent() {
                 </div>
             </div>
 
-            {/* Other Column */}
-            <div className = "shadow-default flex flex-col">   
-                <div className = {`flex flex-col h-full ${expanded ? "ring-2 ring-slate-700 rounded-lg" : ""}`}>
-                    <div className = {`bg-slate-700 flex items-center justify-center min-h-22 min-[530px]:min-h-16 p-2 ${expanded ? "rounded-t-lg" : "ring-2 ring-slate-700 rounded-lg"}`}>
-                        <p className = "text-center">Other</p>
-                    </div>
-                    <div className = {`bg-gray-950 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
-                        <p className = "text-center text-wrap m-1 my-4">
-                            Debugging <br/>
-                            Troubleshooting <br/>
-                            Full-Stack Development <br/>
-                            Scrum/Agile <br/>
-                            Documentation <br/>
-                            UX
-                        </p>
-                    </div>
-                </div>
-            </div> 
         </div>
     );
 }

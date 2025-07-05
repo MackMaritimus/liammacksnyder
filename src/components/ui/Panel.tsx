@@ -24,7 +24,7 @@ export default function Panel ({squareImage = "/Placeholder_Image_1.png", rectan
 
     return (
        <a href = {href} target = "_blank">
-            <div className = "w-[320px] min-[1070px]:w-[512px] h-[320px] min-[1070px]:h-[120px] rounded-lg bg-blue-600 overflow-hidden shadow-default">
+            <div className = "w-full max-w-[320px] min-[1070px]:max-w-[512px] h-auto rounded-lg bg-blue-600 overflow-hidden shadow-default">
                 
                 {/* Image 1 */}
                 <Image 

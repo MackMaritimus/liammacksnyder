@@ -1,7 +1,4 @@
 "use client";
-import Head3 from "./Head3";
-import Body from "@/components/ui/Body";
-import BodySmall from "@/components/ui/BodySmall";
 import BulletList from "./BulletList";
 
 // This class contains two componenets; BubbleTable and Bubble1
@@ -29,27 +26,27 @@ function BubbleTable ({ title="", date="", company="‎", location="‎", descri
         <div 
             className = {ClassName} onClick = {onClick}>
 
-            <div className = "grid grid-cols-2 text-bottom">
-                <Body className = "text-left col-start-1 row-start-1 font-bold">
+            <div className = "max-[350px]:text-xs max-[430px]:text-sm grid grid-cols-2 text-bottom">
+                <p className = "text-left col-start-1 row-start-1 font-bold">
                     {title}
-                </Body>
+                </p>
         
-                <Body className = "text-right col-start-2 row-start-1 font-bold">
+                <p className = "max-[350px]:text-xs max-[430px]:text-sm text-right col-start-2 row-start-1 font-bold">
                     {date}
-                </Body>
+                </p>
         
-                <Body className = "text-left col-start-1 row-start-2 italic">
+                <p className = "max-[350px]:text-xs max-[430px]:text-sm text-left col-start-1 row-start-2 italic">
                     {company}
-                </Body>
+                </p>
             
-                <Body className = "text-right text-top col-start-2 row-start-2 italic">
+                <p className = "max-[350px]:text-xs max-[430px]:text-sm text-right text-top col-start-2 row-start-2 italic">
                     {location}
-                </Body>
+                </p>
             </div>
 
-            <BodySmall className = "text-left">
+            <p className = "text-sm text-left">
                 {description}
-            </BodySmall>
+            </p>
 
             <BulletList items = {bullets} className = "text-sm"/>
 
@@ -70,9 +67,9 @@ function Bubble1({ children, header = "" }:Bubble1Props) {
         <div className = "shadow-default text-night flex flex-col text-center bg-linear-to-br from-pink-500/70 xl:from-pink-600/90 to-cyan-600/70 xl:to-cyan-700/90 rounded-4xl mx-auto max-w-full w-full md:w-190 justify-center md:justify-start items-center">
             <div className = "w-full bg-white/10 p-6 xl:p-15 rounded-4xl space-y-6">
                 <div className = "shadow-default bg-eggshell px-6 py-4 w-[95%] sm:w-[85%] xl:w-[75%] mx-auto rounded-full">
-                    <Head3>
+                    <h3 className = "max-[430px]:text-base text-2xl font-bold ">
                         {header}
-                    </Head3>
+                    </h3>
                 </div>
                 {children}
             </div>

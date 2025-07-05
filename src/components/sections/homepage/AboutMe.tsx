@@ -1,4 +1,3 @@
-import Body from "@/components/ui/Body";
 import Socials from "@/components/ui/Socials";
 import Image from "next/image";
 import Skills from "@/components/ui/Skills";
@@ -14,27 +13,30 @@ export default function AboutMe () {
             <div className = "flex col-start-1 flex-col text-center xl:text-left max-w-full xl:max-w-160 items-center xl:items-start xl:ml-[25%] mb-12">
                 
                 {/* About Me Text Box and Text */}
-                <div className = "flex flex-col max-w-2xl xl:max-w-full">
+                <div className = "flex flex-col max-w-2xl xl:max-w-full items-center xl:items-start">
                     <div className = "">
                         <h1 className = "text-[2.1rem] md:text-[40px] font-bold">
                             {"Liam Snyder"}
                         </h1>
                         
 
-                        <Body className = "mt-6">
+                        <p className = "mt-6">
                             {"Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website."}
-                        </Body>
+                        </p>
 
-                        <Body className = "mt-6">
+                        <p className = "mt-6">
                             {"Fort Collins, CO"}
-                        </Body>
+                        </p>
                     </div>
 
                     
 
                     <Socials className = "mx-auto xl:mx-0 mr-auto mt-6" width = "30"/>
 
+                    <hr className = "bg-white/75 w-[40%] h-0.5 mt-6 rounded-full min-w-[150px]"/>
+                    
                     <Skills/>
+                    
                 </div>
 
             </div> 
