@@ -8,7 +8,7 @@ import VscodeIcon from "@/assets/vscode.svg";
 import SnowflakeIcon from "@/assets/snowflake-bug-color-rgb.svg";
 import EclipseIcon from "@/assets/eclipse_original.svg";
 import GitIcon from "@/assets/git_original.svg";
-import GitHubIcon from "/public/github_invertocat_light.svg";
+import GitHubIcon from "@/assets/github_invertocat_light.svg";
 import UnityIcon from "@/assets/unity_original.svg";
 import VercelIcon from "@/assets/vercel_original.svg";
 import FigmaIcon from "@/assets/figma_original.svg";
