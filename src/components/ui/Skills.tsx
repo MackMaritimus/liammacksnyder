@@ -4,19 +4,78 @@
 'use client'
 import ExpandTable, { ExpandContext } from "./ExpandTable";
 import { useContext } from "react";
+import VscodeIcon from "@/assets/vscode.svg";
+import SnowflakeIcon from "@/assets/snowflake-bug-color-rgb.svg";
+import EclipseIcon from "@/assets/eclipse_original.svg";
+import GitIcon from "@/assets/git_original.svg";
+import GitHubIcon from "/public/github_invertocat_light.svg";
+import UnityIcon from "@/assets/unity_original.svg";
+import VercelIcon from "@/assets/vercel_original.svg";
+import FigmaIcon from "@/assets/figma_original.svg";
+import NotionIcon from "@/assets/notion_original.svg";
+import NextJSIcon from "@/assets/nextjs_original.svg";
+import TailwindIcon from "@/assets/tailwindcss_original.svg";
+import TypeScriptIcon from "@/assets/typescript_original.svg";
+import JavaScriptIcon from "@/assets/javascript_original.svg";
+import ReactIcon from "@/assets/react_original.svg";
+import JavaIcon from "@/assets/java_original.svg";
+import CSharpIcon from "@/assets/csharp_original.svg";
+import PythonIcon from "@/assets/python_original.svg";
+import DataBaseIcon from "@/assets/fa_solid_database.svg"
+import MySQLIcon from "@/assets/mysql_original.svg"
 
-export default function Skills () {
-    return (
-        <ExpandTable 
-            arrowWidth="w-12"
-            expandedHeight="max-h-full"
-            collapsedHeight="max-h-23"
-            expandTableClassName="mt-6 max-w-lg w-full"
-            arrowClassName="mx-auto mt-6"
-        >
-            <SkillsContent/>
-        </ExpandTable>
-    );
+// Technologies array const will tool names and their icons
+const technologies: Skill[] = [
+  { title: "Next.js", Icon: NextJSIcon, href: "https://nextjs.org/", className: "mt-0" },
+  { title: "Tailwind CSS", Icon: TailwindIcon, href: "https://tailwindcss.com/" },
+  { title: "Typescript", Icon: TypeScriptIcon, href: "https://www.typescriptlang.org/" },
+  { title: "Javascript", Icon: JavaScriptIcon, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+  { title: "React", Icon: ReactIcon, href: "https://react.dev/" },
+  { title: "React Native", Icon: null, href: "https://reactnative.dev/" },
+  { title: "Java", Icon: JavaIcon, href: "https://www.java.com/en/" },
+  { title: "C#", Icon: CSharpIcon, href: "https://dotnet.microsoft.com/en-us/languages/csharp" },
+  { title: "Python", Icon: PythonIcon, href: "https://www.python.org/" },
+  { title: "SQL", Icon: DataBaseIcon, href: "https://www.w3schools.com/sql/" },
+];
+
+// Tools array const will tool names and their icons
+const tools: Skill[] = [
+    { title: "VS Code", Icon: VscodeIcon, href: "https://code.visualstudio.com/", className: "mt-0" },
+    { title: "Eclipse", Icon: EclipseIcon, href: "https://eclipseide.org/" },
+    { title: "Snowflake", Icon: SnowflakeIcon, href: "https://www.snowflake.com/en/" },
+    { title: "MySQL Workbench", Icon: MySQLIcon, href: "https://www.mysql.com/products/workbench/" },
+    { title: "Git", Icon: GitIcon, href: "https://git-scm.com/" },
+    { title: "GitHub", Icon: GitHubIcon, href: "https://github.com/" },
+    { title: "Unity", Icon: UnityIcon, href: "https://unity.com/" },
+    { title: "Vercel", Icon: VercelIcon, href: "https://vercel.com/" },
+    { title: "Figma", Icon: FigmaIcon, href: "https://www.figma.com/" },
+    { title: "Adobe Suite", Icon: null, href: "https://www.adobe.com/creativecloud.html" },
+    { title: "Notion", Icon: NotionIcon, href: "https://www.notion.so/" },
+];
+
+// Skill type definition
+interface Skill {
+    title: string;
+    Icon: React.FC<React.SVGProps<SVGSVGElement>>;
+    href?: string;
+    className?: string;
+}
+
+// SkillEntry function to format skill title with icon. 
+function SkillEntry({ title, Icon, href = "", className = "mt-2"}: { title: string; Icon: React.FC<React.SVGProps<SVGSVGElement>>; href?: string; className?: string }) {
+    
+    return href ? (
+        <a href = {href} target = "_blank" rel = "noopener noreferrer" className = "hover:underline">
+            <p className = {className}>
+                {title} {Icon && <Icon className = "ml-1 inline-block w-6 h-6" />}
+            </p>
+        </a>
+    ) : (
+        <p className = {className}>
+            {title} {Icon && <Icon className = "ml-1 inline-block w-6 h-6" />}
+        </p>
+    )
+    
 }
 
 function SkillsContent() {
@@ -32,18 +91,11 @@ function SkillsContent() {
                         <p>Technologies</p>
                     </div>   
                     <div className = {`bg-gray-800/60 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>   
-                        <p className = "text-center text-wrap m-1 my-4">
-                            Next.js <br/>
-                            Tailwind CSS <br/>
-                            Typescript <br/>
-                            Javascript <br/>
-                            React <br/>
-                            React Native <br/>
-                            Java <br/>
-                            C# <br/>
-                            Python <br/>
-                            SQL
-                        </p>
+                        <div className = "text-center text-wrap m-1 my-4">
+                            {technologies.map(({ title, Icon, href, className }) => (
+                                <SkillEntry key={title} title={title} Icon={Icon} href = {href} className = {className}/>
+                            ))}
+                        </div>
                     </div> 
                 </div>
             </div>
@@ -55,22 +107,30 @@ function SkillsContent() {
                         <p>Tools</p>
                     </div>
                     <div className = {`bg-fuchsia-950/50 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
-                        <p className = "text-center text-wrap m-1 my-4">
-                            VS Code <br/>
-                            Snowflake <br/>
-                            Eclipse <br/>
-                            Git <br/>
-                            GitHub <br/>
-                            Unity <br/>
-                            Vercel <br/>
-                            Figma <br/>
-                            Adobe Suite <br/>
-                            Notion
-                        </p>
+                        <div className = "text-center text-wrap m-1 my-4">
+                            {tools.map(({ title, Icon, href, className }) => (
+                                <SkillEntry key={title} title={title} Icon={Icon} href = {href} className = {className}/>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
+    );
+}
+
+// Skills function puts skills into expand table
+export default function Skills () {
+    return (
+        <ExpandTable 
+            arrowWidth="w-12"
+            expandedHeight="max-h-full"
+            collapsedHeight="max-h-23"
+            expandTableClassName="mt-6 max-w-lg w-full"
+            arrowClassName="mx-auto mt-6"
+        >
+            <SkillsContent/>
+        </ExpandTable>
     );
 }
