@@ -14,7 +14,7 @@ export default function Socials ({className = "", width = 9}:SocialsProps) {
 
             <a href = "https://www.linkedin.com/in/liammacksnyder" target = "_blank" rel = "noopener noreferrer" className = "flex">
                 <Image
-                    src = "/linkedin_white.svg"
+                    src = "./linkedin_white.svg"
                     width = {width}
                     height = {width}
                     alt = "Liam Mack Snyder LinkedIn"
@@ -23,7 +23,7 @@ export default function Socials ({className = "", width = 9}:SocialsProps) {
 
             <a href = "https://github.com/MackMaritimus" target = "_blank" rel = "noopener noreferrer" className = "flex">
                 <Image
-                    src = "/gitHub_invertocat_light.svg"
+                    src = "./gitHub_invertocat_light.svg"
                     width = {width}
                     height = {width}
                     alt = "Liam Mack Snyder GitHub"
@@ -32,7 +32,7 @@ export default function Socials ({className = "", width = 9}:SocialsProps) {
 
             <a href = "mailto:LiamMackSnyder@outlook.com" className = "flex">
                 <Image
-                    src = "/envelope_white.svg"
+                    src = "./envelope_white.svg"
                     width = {width}
                     height = {width}
                     alt = "Liam Mack Snyder Email"
