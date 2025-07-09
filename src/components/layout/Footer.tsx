@@ -8,7 +8,7 @@ export default function HPFooter () {
         <section className = "w-full h-auto flex flex-col px-6 text-zinc-300 items-start">
 
                 {/* Socials */}
-                <Socials className = "mb-12 mt-6 ml-auto" width = "w-9"/>
+                <Socials className = "mb-12 mt-6 ml-auto" width = "w-8"/>
 
                 {/* Portfolio Content Copyright Disclaimer */}
                 <div className = "flex flex-col items-start h-full ml-auto mb-4 text-right mt-2">

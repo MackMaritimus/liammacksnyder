@@ -1,5 +1,6 @@
 
-// Skills component with simple list of Languages and Frameworks, Tools, and Other Skills I have.
+// Skills component with list two cards containing things I know, one being tools, and the other technologies.
+// Renders the name of the entry with an an icon next to it and/or link to it's website if applicable
 
 'use client'
 import ExpandTable, { ExpandContext } from "./ExpandTable";
@@ -24,7 +25,7 @@ import PythonIcon from "@/assets/python_original.svg";
 import DataBaseIcon from "@/assets/fa_solid_database.svg"
 import MySQLIcon from "@/assets/mysql_original.svg"
 
-// Technologies array const will tool names and their icons
+// Technologies array const with tool names and their icons
 const technologies: Skill[] = [
   { title: "Next.js", Icon: NextJSIcon, href: "https://nextjs.org/", className: "mt-0" },
   { title: "Tailwind CSS", Icon: TailwindIcon, href: "https://tailwindcss.com/" },
@@ -38,7 +39,7 @@ const technologies: Skill[] = [
   { title: "SQL", Icon: DataBaseIcon, href: "https://www.w3schools.com/sql/" },
 ];
 
-// Tools array const will tool names and their icons
+// Tools array const with tool names and their icons
 const tools: Skill[] = [
     { title: "VS Code", Icon: VscodeIcon, href: "https://code.visualstudio.com/", className: "mt-0" },
     { title: "Eclipse", Icon: EclipseIcon, href: "https://eclipseide.org/" },
@@ -80,16 +81,37 @@ function SkillEntry({ title, Icon, href = "", className = "mt-2"}: { title: stri
 
 function SkillsContent() {
     const { expanded } = useContext(ExpandContext);
+    const zStack = ['z-30', 'z-20', 'z-10'];
+
 
     return (
 
         <div className = "grid grid-cols-2 gap-6 text-sm max-[430px]:text-xs text-wrap">
+            
             {/* Languages and Frameworks Column */}
             <div className = "shadow-default flex flex-col w-full">
                 <div className = {`flex flex-col h-full ${expanded ? "rounded-lg" : ""}`}>
-                    <div className = {`bg-cyan-600/90 flex items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
-                        <p>Technologies</p>
-                    </div>   
+                    <div className = {`bg-linear-to-br from-sky-600/90 to-sky-700/90 flex flex-col ${expanded ? "min-[430px]:grid min-[430px]:grid-cols-1" : "min-[430px]:grid min-[430px]:grid-cols-[9fr_7fr]"} items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
+                        <p className = {`${expanded? "mx-auto mt-1" : "min-[430px]:ml-auto min-[430px]:ml-6"} `}>Technologies</p>
+                        <div className = "min-[430px]:ml-2 max-[430px]:mt-2 min-[430px]:mr-auto">
+                            {/* Render icon stack by card name if card isn't currently expanded*/}
+                            {!expanded && (
+                                <div className="mx-auto min-[430px]:-top-3 flex">
+                                {technologies.slice(0, 3).map(({ Icon }, i) =>
+                                    Icon ? (
+                                    <div
+                                        key={i}
+                                        className={`w-6 h-6 ${zStack[i]} ${i !== 0 ? "-ml-2" : ""}`}
+                                    >
+                                        <Icon className="w-full h-full drop-shadow-default" />
+                                    </div>
+                                    ) : null
+                                )}
+                                </div>
+                            )}
+                        </div> 
+                    </div>
+
                     <div className = {`bg-gray-800/60 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>   
                         <div className = "text-center text-wrap m-1 my-4">
                             {technologies.map(({ title, Icon, href, className }) => (
@@ -103,9 +125,27 @@ function SkillsContent() {
             {/* Tools Column */}
             <div className = "shadow-default flex flex-col w-full">
                 <div className = {`flex flex-col h-full ${expanded ? "rounded-lg" : ""}`}>
-                    <div className = {`bg-pink-600/90 flex items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
-                        <p>Tools</p>
+                    <div className = {`bg-linear-to-br from-pink-600/90 to-pink-500/90 flex flex-col ${expanded ? "min-[430px]:grid min-[430px]:grid-cols-1" : "min-[430px]:grid min-[430px]:grid-cols-[5fr_7fr]"} items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
+                        <p className = {`${expanded? "mx-auto mt-1" : "min-[430px]:ml-auto min-[430px]:ml-6"} `}>Tools</p>
+                        <div className = "min-[430px]:ml-2 max-[430px]:mt-2 min-[430px]:mr-auto">
+                            {/* Render icon stack by card name if card isn't currently expanded*/}
+                            {!expanded && (
+                                <div className="mx-auto min-[430px]:-top-3 flex">
+                                {tools.slice(0, 3).map(({ Icon }, i) =>
+                                    Icon ? (
+                                    <div
+                                        key={i}
+                                        className={`w-6 h-6 ${zStack[i]} ${i !== 0 ? "-ml-2" : ""}`}
+                                    >
+                                        <Icon className="w-full h-full drop-shadow-default" />
+                                    </div>
+                                    ) : null
+                                )}
+                                </div>
+                            )}
+                        </div>
                     </div>
+                    
                     <div className = {`bg-fuchsia-950/50 w-full h-full flex text-center justify-center rounded-b-lg ${expanded ? "" : "hidden" }`}>
                         <div className = "text-center text-wrap m-1 my-4">
                             {tools.map(({ title, Icon, href, className }) => (
