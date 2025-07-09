@@ -88,12 +88,14 @@ function SkillsContent() {
 
         <div className = "grid grid-cols-2 gap-6 text-sm max-[430px]:text-xs text-wrap">
             
-            {/* Languages and Frameworks Column */}
+            {/* Technologies Card */}
             <div className = "shadow-default flex flex-col w-full">
                 <div className = {`flex flex-col h-full ${expanded ? "rounded-lg" : ""}`}>
                     <div className = {`bg-linear-to-br from-sky-600/90 to-sky-700/90 flex flex-col ${expanded ? "min-[430px]:grid min-[430px]:grid-cols-1" : "min-[430px]:grid min-[430px]:grid-cols-[9fr_7fr]"} items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
-                        <p className = {`${expanded? "mx-auto mt-1" : "min-[430px]:ml-auto min-[430px]:ml-6"} `}>Technologies</p>
-                        <div className = "min-[430px]:ml-2 max-[430px]:mt-2 min-[430px]:mr-auto">
+                        <p className = {`text-base max-[500px]:text-sm ${expanded? "mx-auto" : "min-[430px]:ml-auto min-[430px]:ml-6"} `}>
+                            Technologies
+                        </p>
+                        <div className = {`min-[430px]:ml-2 max-[430px]:mt-2 min-[430px]:mr-auto bg-gray-800/90 p-1 px-2 rounded ${expanded? "hidden" : "" }`}>
                             {/* Render icon stack by card name if card isn't currently expanded*/}
                             {!expanded && (
                                 <div className="mx-auto min-[430px]:-top-3 flex">
@@ -122,12 +124,14 @@ function SkillsContent() {
                 </div>
             </div>
 
-            {/* Tools Column */}
+            {/* Tools Card */}
             <div className = "shadow-default flex flex-col w-full">
                 <div className = {`flex flex-col h-full ${expanded ? "rounded-lg" : ""}`}>
                     <div className = {`bg-linear-to-br from-pink-600/90 to-pink-500/90 flex flex-col ${expanded ? "min-[430px]:grid min-[430px]:grid-cols-1" : "min-[430px]:grid min-[430px]:grid-cols-[5fr_7fr]"} items-center justify-center min-h-12 p-2 ${expanded ? "rounded-t-lg" : "rounded-lg"}`}>
-                        <p className = {`${expanded? "mx-auto mt-1" : "min-[430px]:ml-auto min-[430px]:ml-6"} `}>Tools</p>
-                        <div className = "min-[430px]:ml-2 max-[430px]:mt-2 min-[430px]:mr-auto">
+                        <p className = {`text-base max-[500px]:text-sm ${expanded? "mx-auto" : "min-[430px]:ml-auto min-[430px]:ml-6"} `}>
+                            Tools
+                        </p>
+                        <div className = {`min-[430px]:ml-2 max-[430px]:mt-2 min-[430px]:mr-auto bg-fuchsia-950/97 p-1 px-2 rounded ${expanded? "hidden" : "" }`}>
                             {/* Render icon stack by card name if card isn't currently expanded*/}
                             {!expanded && (
                                 <div className="mx-auto min-[430px]:-top-3 flex">

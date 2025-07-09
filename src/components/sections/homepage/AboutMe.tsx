@@ -16,7 +16,7 @@ export default function AboutMe () {
                 <div className = "flex flex-col max-w-2xl xl:max-w-full items-center xl:items-start">
                     <div className = "">
                         <h1 className = "text-[2.1rem] md:text-[40px] font-bold">
-                            {"Liam Snyder"}
+                            Liam Snyder
                         </h1>
                         
 
@@ -24,8 +24,8 @@ export default function AboutMe () {
                             {"Hi there! My name's Liam. I'm a CSU student pursuing a BSBA with dual focuses in Computer Information Systems and Marketing. I've only been coding since August of 2024, but I've been enjoying spending quite a bit of time making things like this website."}
                         </p>
 
-                        <p className = "mt-6">
-                            {"Fort Collins, CO"}
+                        <p className = "mt-6 italic">
+                            Fort Collins, CO
                         </p>
                     </div>
 
