@@ -3,8 +3,8 @@
 // and limits the height of that other component until the clicking the expand arrow at the bottom of the table
 
 import { useState, createContext } from "react";
-import Collapse_Arrow from "@/assets/Collapse_Arrow.svg";
-import Expand_Arrow from "@/assets/Expand_Arrow.svg";
+import Collapse_Arrow from "@/assets/collapse_arrow.svg";
+import Expand_Arrow from "@/assets/expand_arrow.svg";
 
 interface ExpandTableProps {
     arrowWidth: string,
