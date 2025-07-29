@@ -24,9 +24,9 @@ export default function Panel ({squareImage = "/Placeholder_Image_1.png", rectan
 
     return (
        <a href = {href} target = "_blank">
-            <div className = "w-full max-w-[320px] min-[1070px]:max-w-[512px] h-auto rounded-lg bg-blue-600 overflow-hidden shadow-default">
+            <div className = "w-full max-w-[320px] min-[1070px]:max-w-[512px] h-auto rounded-lg overflow-hidden shadow-default">
                 
-                {/* Image 1 */}
+                {/* Square Image 320x320 */}
                 <Image 
                     src = {squareImage} 
                     alt = {alt} 
@@ -36,7 +36,7 @@ export default function Panel ({squareImage = "/Placeholder_Image_1.png", rectan
                     quality = {100}
                 />
 
-                {/* Image 2 */}
+                {/* Rectangle Image 512x120 */}
                 <Image 
                     src = {rectangleImage} 
                     alt = {alt} 
@@ -48,7 +48,5 @@ export default function Panel ({squareImage = "/Placeholder_Image_1.png", rectan
 
             </div>
         </a> 
-        
     );
-
 }

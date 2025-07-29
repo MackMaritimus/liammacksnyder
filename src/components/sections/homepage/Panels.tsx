@@ -11,7 +11,7 @@ export default function Panels () {
             <Panel 
                 squareImage = "/Resume_Download_Square_Panel.png"
                 rectangleImage = "/Resume_Download_Rectangle_Panel.png"
-                href = "/Liam_Snyder_Resume_CIS.pdf"
+                href = "/Liam_Snyder_Resume.pdf"
                 alt = "Download Liam Snyder's Resume"
             />
             
