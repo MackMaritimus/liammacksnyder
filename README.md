@@ -20,7 +20,7 @@ This is my personal website, built with [Next.js](https://nextjs.org/), [Tailwin
 
 <div align = "center">
     <a href = "https://liammacksnyder.com">
-        <img src = "./src/assets/preview.png" width = "90%" alt = "Preview of Liam Snyder's Live Site">
+        <img src = "./public/preview.png" width = "90%" alt = "Preview of Liam Snyder's Live Site">
     </a>
 </div>
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         siteName: "Liam Mack Snyder",
         images: [
             {
-                url: "https://liammacksnyder.com/LinkedIn.png",
+                url: "https://liammacksnyder.com/preview.png",
                 width: 600,
                 height: 600,
             },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Liam Mack Snyder | Home",
         description: "Liam Snyder's personal website showcasing his professional qualifications, providing a quick summary, and acting as an online hub. It also shows some nice UX!",
-        images : ["https://liammacksnyder.com/LinkedIn.png"],
+        images : ["https://liammacksnyder.com/preview.png"],
     },
 
     // Site Icons
