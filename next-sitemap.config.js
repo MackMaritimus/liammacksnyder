@@ -8,8 +8,5 @@ module.exports = {
                 allow: '/',
             },
         ],
-        additionalSitemaps: [
-            'https://liammacksnyder.com/sitemap.xml',
-        ],
     },
 };
