@@ -1,2 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://liammacksnyder.com
+
+# Sitemaps
+Sitemap: https://liammacksnyder.com/sitemap.xml
