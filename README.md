@@ -1,20 +1,36 @@
-# Liam Mack Snyder – Personal Website
 
-This is my personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). When finished, it will showcase anything and everything I want it to including coding work and qualifications, and acting as a hub for my socials and resume.
+### Liam Snyder – Personal Website 
 
-## 🌐 Live Site
-[liammacksnyder.com](https://liammacksnyder.com)
+This is my personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/). I made it to act as my personal online hub for professional life while giving me full customization over what I'm able to do.
 
-## 🚀 Tech Stack
-- **Next.js** – Full-stack React framework for performant web app development
-- **TypeScript** – Type-safe JavaScript for safer, more maintainable code
-- **Tailwind CSS** – Utility-first styling framework for quick UI development
-- **Vercel** – Cloud platform for deployment and hosting
+<br/>
 
-## 🚧 Work in Progress
-This site is still under development. I began building it in May 2025, focusing first on frontend layout and responsive design. As of June, I've fully redesigned the homepage and the site is close to an MVP state.
+---
 
-## 🗄️ Code Archive Repo (WIP)
-The following link is a public GitHub archive of my coursework and personal projects, currently including SQL. Java, Python, and React Native work will be added soon.
+<div align = "center">
+    <img src = "./src/assets/favicon2.svg" width = "400" alt = "Liam Snyder's Site Lion Logo">
+</div>
 
-[github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive](https://github.com/MackMaritimus/Liam-Mack-Snyder-Dev-Archive)
+---
+
+### 🌐 Live Site
+> ### **[liammacksnyder.com](https://liammacksnyder.com)**
+
+<div align = "center">
+    <a href = "https://liammacksnyder.com">
+        <img src = "./src/assets/preview.png" width = "90%" alt = "Preview of Liam Snyder's Live Site">
+    </a>
+</div>
+
+<br/>
+
+
+
+
+ ### 🛠️ Tech Stack
+>- **[Next.js](https://nextjs.org/)** – Full-stack React framework for performant web app development
+> - **[TypeScript](https://www.typescriptlang.org/)** – Type-safe JavaScript for safer, more maintainable code
+> - **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first styling framework for quick UI development
+> - **[Vercel](https://vercel.com/)** – Cloud platform for deployment and hosting
+
+---
