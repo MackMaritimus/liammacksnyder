@@ -137,17 +137,6 @@ export default function Resume () {
         />
     );
 
-    const tradingOverlayBubble = (
-        <BubbleTable
-            title = "Charles Schwab Trading" 
-            date = "2020 - Present"
-            description = "Traded stocks since I was 15 years old, now maintaining two brokerage accounts, both of which have achieved profits."
-            bullets = {[
-                "Achieved 193% growth and a 100% gain/loss ratio on one of two brokerages in 2024",
-                "Perform both fundamental and technical analysis to assess entries and exits for trades"]}
-        />
-    );
-
     const projectsBubble = (
         <Bubble1 header = "Projects">
              
