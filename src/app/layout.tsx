@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -39,16 +39,12 @@ export const metadata: Metadata = {
         description: "Liam Snyder's personal website showcasing his professional qualifications, providing a quick summary, and acting as an online hub. It also shows some nice UX!",
         images : ["https://liammacksnyder.com/preview.png"],
     },
-
-    // Site Icons
-    icons: {
-        icon: "/favicon.svg",
-        shortcut: "/favicon.svg",
-        apple: "/favicon.svg",
-    },
-
     metadataBase: new URL("https://liammacksnyder.com"),
 };
+
+export const viewport: Viewport = {
+    themeColor: "#0a0a0a",
+}
 
 export default function RootLayout({
     children,

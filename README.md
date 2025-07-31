@@ -9,7 +9,7 @@ This is my personal website, built with [Next.js](https://nextjs.org/), [Tailwin
 
 <a href = "https://liammacksnyder.com">
 <div align = "center">
-    <img src = "./src/assets/favicon2.svg" width = "400" alt = "Liam Snyder's Site Lion Logo">
+    <img src = "./src/assets/icon.svg" width = "400" alt = "Liam Snyder's Site Lion Logo">
 </div>
 </a>
 
