@@ -64,10 +64,10 @@ export default function Resume () {
             location = "Lafayette, CO"
             description = "Delivered client-focused landscape services in a fast-paced small business setting while taking on additional responsibilities including new hire training and job site preparation."
             bullets = {[
-                "Led physically demanding work under pressure, meeting tight deadlines while maintaining precision and professionalism",
+                "Supervised and worked alongside crews of 2-3 team members on residential projects",
                 "Trained 3 new team members on procedures, equipment, and customer interaction",
-                "Supported planning and execution of multi-step projects, helping prioritize tasks, allocate resources, and track progress",
-                "Acted as on-site point of contact, directly managing client expectations and resolving issues to uphold quality standards and satisfaction"]}
+                "Handled logistical tasks including dump runs, trailer hauling, and equipment preparation",
+                "Acted as on-site point of contact, managing client expectations and resolving issues to uphold quality standards"]}
         />
     );
 
@@ -82,8 +82,7 @@ export default function Resume () {
                 "Prevented 2 cases of check fraud through proactive verification and awareness",
                 "Processed daily cash transactions up to $10,000",
                 "Performed vault auditing and participated in secure opening/closing procedures",
-                "Operated within strict compliance protocols and confidentiality policies",
-                "Delivered member-focused service while managing long lines and high-pressure situations"]}
+                "Operated within strict compliance protocols and confidentiality policies"]}
         />
     );
 
@@ -112,16 +111,29 @@ export default function Resume () {
         </Bubble1>
     );
 
+    const homeServerOverlayBubble = (
+        <BubbleTable
+            title = "Home Server & Personal Cloud" 
+            date = "Ongoing Development"
+            description = "Designed and maintain a fully self-hosted home server environment for private cloud storage, secure remote access, and automated data processing."
+            bullets = {[
+                "Deployed on Windows Pro, with WSL for Linux integration and to run Nextcloud.",
+                "Built automated media management system using PowerShell, ExifTool, and FFmpeg to handle renaming, hash-based deduplication, conversions/encoding, storage, and multithreading of all media files placed into a dump folder.",
+                "Implemented Nginx for https reverse proxy and AdGuard for DNS rewrites.",
+                "Set up WireGuard network for secure, remote access to both Windows (SSH, RDP) and Linux (Nextcloud Terminal, Nextcloud Sync) server functions."]}
+        />
+    );
+
     const websiteOverlayBubble = (
         <BubbleTable
             title = "Personal Vercel Website" 
-            date = "May 2025 - Present" 
-            description = "Currently working on designing a personal website to gain frontend, deployment, and Git experience as well as experience with new languages and frameworks."
+            date = "Ongoing Development" 
+            description = "Built a personal website to gain frontend, deployment, and Git experience as well as experience with new languages and frameworks, and to provide myself with a customizable, online hub."
             bullets = {[
-                "Deployed live site via Vercel with continuous integration from GitHub",
-                "Gained hands-on experience with frontend frameworks, version control, CLI Git, and static deployment",
-                "Designed custom UI/UX elements and integrated original visual content",
-                "Linked to a project archive GitHub repo that currently contains SQL work, and will contain Java, Python, and React Native work when finished. Site will also eventually contain art."]}
+                "Deployed live site using Vercel with continuous integration from GitHub",
+                "Designed custom UI/UX elements for scalability and integrated original visual content",
+                "Developed with Next.js and Tailwind CSS",
+                "Gained practical experience with version control and static deployment"]}
         />
     );
 
@@ -139,20 +151,20 @@ export default function Resume () {
     const projectsBubble = (
         <Bubble1 header = "Projects">
              
+            {/* Home Server & Personal Cloud */}
+            <BubbleTable
+                title = "Home Server & Personal Cloud" 
+                date = "Ongoing Development"
+                className = "hover:cursor-pointer hover:scale-105 duration-500"
+                onClick = {() => setSelectedBubble(6)}
+            />
+
             {/* Personal Vercel Site */}
             <BubbleTable
                 title = "Personal Vercel Website" 
-                date = "May 2025 - Present"
+                date = "Ongoing Development"
                 className = "hover:cursor-pointer hover:scale-105 duration-500"
                 onClick = {() => setSelectedBubble(5)}
-            />
-
-            {/* Schwab Trading */}
-            <BubbleTable
-                title = "Charles Schwab Trading" 
-                date = "2020 - Present"
-                className = "hover:cursor-pointer hover:scale-105 duration-500"
-                onClick = {() => setSelectedBubble(6)}
             />
         </Bubble1>
     );
@@ -208,10 +220,9 @@ export default function Resume () {
 
             {selectedBubble === 6 && (
                 <StaticOverlay onClick = {() => setSelectedBubble(0)}>
-                    {tradingOverlayBubble}
+                    {homeServerOverlayBubble}
                 </StaticOverlay>
             )}
-
 
         </section>
     );

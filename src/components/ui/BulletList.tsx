@@ -14,7 +14,7 @@ export default function BulletList ({ items = [], className = "" }:BulletListPro
         <ul className = {ClassName}> 
             {items.length > 0 && (
                 items.map((item, index) => (
-                    <li key={index} className = "pl-2 indent-[-1.25rem]">{item}</li>   
+                    <li key={index} className = "pl-2 indent-[-0.9rem]">{item}</li>   
                 ))
             )}
         </ul> 
