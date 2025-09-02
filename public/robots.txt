@@ -1,6 +1,7 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /Liam_Snyder_Resume.pdf
 
 # Host
 Host: https://liammacksnyder.com
