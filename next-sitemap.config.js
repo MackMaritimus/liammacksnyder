@@ -6,7 +6,7 @@ module.exports = {
             {
                 userAgent: '*',
                 allow: '/',
-                disallow: '/Liam_Snyder_Resume.pdf,
+                disallow: '/Liam_Snyder_Resume.pdf',
             },
         ],
     },
