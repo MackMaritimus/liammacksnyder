@@ -24,19 +24,29 @@ import CSharpIcon from "@/assets/csharp_original.svg";
 import PythonIcon from "@/assets/python_original.svg";
 import DataBaseIcon from "@/assets/fa_solid_database.svg"
 import MySQLIcon from "@/assets/mysql_original.svg"
+import UbuntuIcon from "@/assets/ubuntu_logo.svg"
+import PostgresqlIcon from "@/assets/Postgresql_elephant.svg"
+import NodejsIcon from "@/assets/node.js_logo.svg"
+import ApacheHTTPIcon from "@/assets/apache_feather_logo.svg"
+import NginxIcon from "@/assets/nginx_logo.svg"
 
 // Technologies array const with tool names and their icons
 const technologies: Skill[] = [
-  { title: "Next.js", Icon: NextJSIcon, href: "https://nextjs.org/", className: "mt-0" },
-  { title: "Tailwind CSS", Icon: TailwindIcon, href: "https://tailwindcss.com/" },
-  { title: "Typescript", Icon: TypeScriptIcon, href: "https://www.typescriptlang.org/" },
-  { title: "Javascript", Icon: JavaScriptIcon, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-  { title: "React", Icon: ReactIcon, href: "https://react.dev/" },
-  { title: "React Native", Icon: null, href: "https://reactnative.dev/" },
-  { title: "Java", Icon: JavaIcon, href: "https://www.java.com/en/" },
-  { title: "C#", Icon: CSharpIcon, href: "https://dotnet.microsoft.com/en-us/languages/csharp" },
-  { title: "Python", Icon: PythonIcon, href: "https://www.python.org/" },
-  { title: "SQL", Icon: DataBaseIcon, href: "https://www.w3schools.com/sql/" },
+    { title: "Ubuntu", Icon: UbuntuIcon, href: "https://ubuntu.com/", className: "mt-0" },
+    { title: "Apache HTTPD", Icon: ApacheHTTPIcon, href: "https://httpd.apache.org/" },
+    { title: "Postgresql", Icon: PostgresqlIcon, href: "https://www.postgresql.org/" },
+    { title: "Nginx", Icon: NginxIcon, href: "https://nginx.org/en/" },
+    { title: "Node.js", Icon: NodejsIcon, href: "https://nodejs.org/en" },
+    { title: "Next.js", Icon: NextJSIcon, href: "https://nextjs.org/" },
+    { title: "Tailwind CSS", Icon: TailwindIcon, href: "https://tailwindcss.com/" },
+    { title: "Typescript", Icon: TypeScriptIcon, href: "https://www.typescriptlang.org/" },
+    { title: "Javascript", Icon: JavaScriptIcon, href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { title: "React", Icon: ReactIcon, href: "https://react.dev/" },
+    { title: "React Native", Icon: null, href: "https://reactnative.dev/" },
+    { title: "Java", Icon: JavaIcon, href: "https://www.java.com/en/" },
+    { title: "C#", Icon: CSharpIcon, href: "https://dotnet.microsoft.com/en-us/languages/csharp" },
+    { title: "Python", Icon: PythonIcon, href: "https://www.python.org/" },
+    { title: "SQL", Icon: DataBaseIcon, href: "https://www.w3schools.com/sql/" },
 ];
 
 // Tools array const with tool names and their icons

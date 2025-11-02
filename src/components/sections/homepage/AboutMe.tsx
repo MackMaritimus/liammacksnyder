@@ -29,10 +29,7 @@ export default function AboutMe () {
                         </p>
                     </div>
 
-                    
-
                     <Socials className = "mx-auto xl:mx-0 mr-auto mt-6" width = "w-8"/>
-
                     <hr className = "bg-white/75 w-[40%] h-0.5 mt-6 rounded-full min-w-[150px]"/>
                     
                     <Skills/>

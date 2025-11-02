@@ -115,12 +115,12 @@ export default function Resume () {
         <BubbleTable
             title = "Home Server & Personal Cloud" 
             date = "Ongoing Development"
-            description = "Designed and maintain a fully self-hosted home server environment for private cloud storage, secure remote access, and automated data processing."
+            description = "Designed and maintain a fully self-hosted Proxmox/Ubuntu Server environment including SFTPGo, Immich, Home Assistant OS, AdGuard Home, a Postgres SQL Server, and Nginx for reverse proxy"
             bullets = {[
-                "Deployed on Windows Pro, with WSL for Linux integration and to run Nextcloud.",
-                "Built automated media management system using PowerShell, ExifTool, and FFmpeg to handle renaming, hash-based deduplication, conversions/encoding, storage, and multithreading of all media files placed into a dump folder.",
-                "Implemented Nginx for https reverse proxy and AdGuard for DNS rewrites.",
-                "Set up WireGuard network for secure, remote access to both Windows (SSH, RDP) and Linux (Nextcloud Terminal, Nextcloud Sync) server functions."]}
+                "Proxmox Node with multiple VMs including Ubuntu Server and HAOS.",
+                "Nginx webserver with Let’s Encrypt certs and HTTPS reverse proxies for all services",
+                "Use WireGuard running on Flint 3 (OpenWRT router) for secure, remote access (SSH and all self-hosted services)",
+                ]}
         />
     );
 
