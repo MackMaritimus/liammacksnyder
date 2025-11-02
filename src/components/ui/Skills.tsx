@@ -25,7 +25,7 @@ import PythonIcon from "@/assets/python_original.svg";
 import DataBaseIcon from "@/assets/fa_solid_database.svg"
 import MySQLIcon from "@/assets/mysql_original.svg"
 import UbuntuIcon from "@/assets/ubuntu_logo.svg"
-import PostgresqlIcon from "@/assets/Postgresql_elephant.svg"
+import PostgresqlIcon from "@/assets/postgresql_elephant.svg"
 import NodejsIcon from "@/assets/node.js_logo.svg"
 import ApacheHTTPIcon from "@/assets/apache_feather_logo.svg"
 import NginxIcon from "@/assets/nginx_logo.svg"
